@@ -1,0 +1,27 @@
+.footer{
+    background-color: $color-footer;
+    grid-column: full-start/full-end;
+
+    display: grid;
+    grid-template-columns:$grid-column-footer;
+    grid-column-gap: 4rem;
+    grid-template-rows: 20vh;
+    
+
+    &__img{
+        grid-column: center-start/ span 2;
+        width: 40%;
+        margin-top: 3rem;
+    
+    }
+    
+}
+
+.copyright{
+    color: $color-footer-text;
+    font-weight: 400;
+    font-size: 1.6rem;
+    grid-column: col-start 7 / span 2;
+    text-align: right;
+    margin-top: 2rem;
+}
