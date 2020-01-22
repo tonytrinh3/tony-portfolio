@@ -50,7 +50,7 @@ $grid-column: [full-start] minmax(6rem, 1fr)
 minmax(6rem, 1fr) [full-end];
 
 $grid-column-banner: [full-start] minmax(6rem, 3fr) 
-[center-start] repeat(10, [col-start] 15rem [col-end]) [center-end] 
+[center-start] repeat(10, [col-start] 1fr [col-end]) [center-end] 
 minmax(6rem, 3fr) [full-end];
 
 $grid-column-nav: [full-start] .5rem
