@@ -5,7 +5,7 @@ const Navigation = () => {
     return(
 
         <nav className = "navigation">
-            <a href="/" className="navigation__img"><img src="../img/ucb_eecs_logo_header.svg" alt="Berkely Logo"/></a>
+            <a href="/" className="navigation__img"><img src={require("../img/ucb_eecs_logo_header.svg")} alt="Berkely Logo"/></a>
             <a href = "./about.html" className="navigation__button navigation__button--1">
                 About
                 <span className="navigation__caret"></span>

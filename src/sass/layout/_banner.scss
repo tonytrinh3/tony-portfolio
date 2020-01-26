@@ -9,7 +9,7 @@
     
 
     &__item{
-        grid-column: center-start/ span 6;
+        grid-column: img-start/ img-end;
         
         
     }
@@ -26,7 +26,7 @@
 
     &__content{
         background-color: $color-banner-content-background;
-        grid-column: col-start 7 / full-end;
+        grid-column: info-start / info-end;
         padding: 3.5rem;
         background-image: url('../../img/ucb_tesselation.svg');
         background-size: cover;
@@ -36,10 +36,16 @@
         &__heading{
             color: $color-banner-text;
         }
+
+
     
         &__paragraph{
             color: $color-banner-text;
             font-size: 2rem;
+            
+        }
+
+        &__icon{
             
         }
     }

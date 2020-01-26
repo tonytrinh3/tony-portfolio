@@ -4,7 +4,7 @@ import '../sass/main.scss';
 const Card = () =>{
     return (
     <div className="card">
-        <img src="../img/ancadragan-laughing-crop.jpg" alt="" className="card__img"/>
+        <img src={require("../img/ancadragan-laughing-crop.jpg")} alt="women_laughing" className="card__img"/>
         <h3 className="card__img__caption">CS Assistant Prof. Anca Dragan</h3>
         <div className="card__description">
             <h1 className="card__descrtipion__title heading-med">Academics</h1>
