@@ -2,7 +2,9 @@ import React from 'react';
 
 import Header from './components/Header';
 import Navigation from './components/Navigation';
-import Breadcrumb from './components/Breadcrumb';
+import About from './components/About';
+import Skills from './components/Skills';
+// import Breadcrumb from './components/Breadcrumb';
 import Banner from './components/Banner';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
@@ -16,9 +18,16 @@ class App extends React.Component{
       <div className = "container">
         <Header/>
         <Navigation/>
-        <Breadcrumb />
-        <Banner />
-        <Cards />
+        <About/>
+        <Skills/>
+        <div className="u-hline"></div>
+        {/* <Breadcrumb /> */}
+        {/* <Banner />
+        <Cards /> */}
+        <Footer />
+        <Footer />
+        <Footer />
+        <Footer />
         <Footer />
       </div>
   

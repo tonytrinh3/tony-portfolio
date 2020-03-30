@@ -1,9 +1,11 @@
 .footer{
     background-color: $color-footer;
-    grid-column: full-start/full-end;
-
+    grid-column: body-start/body-end;
+  
     display: grid;
-    grid-template-columns:$grid-column-footer;
+    grid-template-columns:[full-start] .5rem
+    [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 
+    .5rem [full-end];
     grid-column-gap: 4rem;
     grid-template-rows: 20vh;
     

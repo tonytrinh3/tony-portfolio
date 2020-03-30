@@ -1,0 +1,29 @@
+.skills{
+    grid-column: body-start/body-end;
+    background-color: grey;
+
+    display:grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+
+    &__heading{
+        grid-column: 1/-1;
+    }
+
+    &__paragraph{
+        grid-column: 1/-1;
+    }
+
+    &__list{    
+
+        &--left{
+            grid-column: 1/2;
+        }
+        &--right{
+            grid-column: 2/3;
+        }
+
+        &__item{
+            margin-bottom: 4rem;
+        }
+    }
+}

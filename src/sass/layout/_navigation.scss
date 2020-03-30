@@ -1,9 +1,13 @@
 .navigation{
     background-color: $color-navigation;
-    grid-column: full-start / full-end;
+    // grid-column: nav-start / nav-end;
+    position: fixed;
+    right: 0rem;
+    height: 100vh;
+    width: minmax(min-content,25vw);
 
    display: grid;
-   grid-template-columns: $grid-column-nav;
+    grid-template-columns: minmax(min-content,25vw);
    grid-template-rows: 12.5rem;
    grid-column-gap: 4rem;
   
@@ -32,9 +36,7 @@
     
       
   
-        &--1{
-            grid-column: col-start 6/span 1;
-        }
+     
 
    }
 

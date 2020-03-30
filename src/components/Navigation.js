@@ -1,34 +1,37 @@
 import React from 'react';
 import '../sass/main.scss';
+import logo from "../img/ucb_eecs_logo_header.svg";
 
 const Navigation = () => {
     return(
 
-        <nav className = "navigation">
-            <a href="/" className="navigation__img"><img src={require("../img/ucb_eecs_logo_header.svg")} alt="Berkely Logo"/></a>
+        <div className = "navigation">
+            <p className="ewaf">serfesrg</p>
+            {/* <a href="/" className="navigation__img"><img src={logo} alt="Berkely Logo"/></a>
             <a href = "./about.html" className="navigation__button navigation__button--1">
-                About
+                Home
                 <span className="navigation__caret"></span>
             </a>
             <a href = "./research.html" className="navigation__button navigation__button--2">
-                Research
+                Projects
                 <span className="navigation__caret"></span>
             </a>
             <a href = "./publications.html" className="navigation__button navigation__button--3">
-                Publications
+                Resume
                 <span className="navigation__caret"></span>
             </a>
             <a className="navigation__button navigation__button--4">
-                People
+                Contacts
                 <span className="navigation__caret"></span>
             </a>
-            <a className="navigation__button navigation__button--4">
+             <a className="navigation__button navigation__button--4">
                 Connect
                 <span className="navigation__caret"></span>
-            </a>
-        </nav>
+            </a> */}
+        </div>
     )
 };
 
 export default Navigation
 
+{/* <img src={require("../img/ucb_eecs_logo_header.svg")} alt="Berkely Logo"/> */}
