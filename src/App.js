@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 // import Breadcrumb from './components/Breadcrumb';
 import Banner from './components/Banner';
 import Cards from './components/Cards';
@@ -24,7 +25,7 @@ class App extends React.Component{
         {/* <Breadcrumb /> */}
         {/* <Banner />
         <Cards /> */}
-        <Footer />
+        <Projects />
         <Footer />
         <Footer />
         <Footer />
