@@ -4,7 +4,6 @@ import '../sass/main.scss';
 const Header = () =>{
     return (
         <header className="header">
-            awef
         </header>
     )
 };

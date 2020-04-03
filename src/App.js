@@ -20,15 +20,13 @@ class App extends React.Component{
         <Header/>
         <Navigation/>
         <About/>
+        <div className="u-hline"></div>
         <Skills/>
         <div className="u-hline"></div>
         {/* <Breadcrumb /> */}
         {/* <Banner />
         <Cards /> */}
         <Projects />
-        <Footer />
-        <Footer />
-        <Footer />
         <Footer />
       </div>
   

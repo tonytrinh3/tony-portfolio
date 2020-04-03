@@ -1,8 +1,20 @@
 .about{
-    background-color: red;
     grid-column: body-start/body-end;
 
    
     height: 100%;
+
+    display: grid;
+    grid-template-rows: min-content 25vh min-content;
+
+    &__main-header{
+        grid-row: 1;
+
+    }
+
+    
+    &__sub-header{
+        grid-row: 2;
+    }
 }
 

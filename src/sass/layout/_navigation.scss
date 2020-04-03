@@ -1,55 +1,135 @@
+@import "../font-awesome/brands.scss";
+@import "../font-awesome/fontawesome.scss";
+@import "../font-awesome/solid.scss";
+//https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
 .navigation{
     background-color: $color-navigation;
     // grid-column: nav-start / nav-end;
     position: fixed;
     right: 0rem;
-    height: 100vh;
+    height: minmax(min-content,100vh);
     width: minmax(min-content,25vw);
 
    display: grid;
+
     grid-template-columns: minmax(min-content,25vw);
-   grid-template-rows: 12.5rem;
-   grid-column-gap: 4rem;
-  
-  
+    grid-template-rows: minmax(20rem, min-content) repeat(4,min-content) ;
 
-   &__img{
-    grid-column: logo-start/logo-end;
-    align-self:center;
-    height: 50%;
-    cursor: pointer;
-   }
+    color: white;
+  
+    &__img{
+        border-radius: 50%;
+        object-fit: cover;
+        height:100%;
+        justify-self: center;
+        margin-top: 5rem;
+        grid-column: 1/-1;
+    }
 
-   &__button{
-       color: $color-navigation-text;
-       font-size: 2.6rem;
-       padding: 3rem;
-       align-self: center;
-       text-align:center;
-       //you need these below to negate the user style sheet default from browser
-       border: none;
-        border-radius: 0;
-        background-color: $color-navigation;
-        text-decoration: none;
-        border: 1.5px solid $color-navigation;
-        border-radius: 1px;
+    &__header{
+        @extend %fa-icon;
+        @extend .fab;
+        margin-top: 10rem;
+        grid-column: 1/-1;
+        justify-self: center;
+        &:before {
+            content: fa-content($fa-var-twitter);
+          }
+    }
+
+    &__description{
+        margin: 0 8rem;
+        grid-column: 1/-1;
+        justify-self: center;
+        font-style: italic;
+        text-align: center;
+    }
+
+    &__items{
+        margin-right: 8rem;
+        margin-left: 8rem;
+        margin-top: 5rem;
+        list-style-position: inside;
+        list-style-type: none;
+        justify-self: center;
+        text-align: center;
+        
+    }
+
+    &__item{
+        margin-bottom: 5rem;
+    }
+
+    &__icons{
+        grid-column: 1/-1;
+        justify-self: center;
+
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+
+        list-style-type: none;
+    
+        // text-align: center;
+
+        
+
+        &__icon{
+            @extend %fa-icon;
+            @extend .fab;
+          
+            &--1{
+            content: fa-content($fa-var-twitter);
+            }
+
+            &--2{
+            content: fa-content($fa-var-twitter);
+            }
+        }
+    }
+
+}
+
+
+
+// &__img{
+//     grid-column: logo-start/logo-end;
+//     align-self:center;
+//     height: 50%;
+//     cursor: pointer;
+//    }
+
+//    &__button{
+//        color: $color-navigation-text;
+//        font-size: 2.6rem;
+//        padding: 3rem;
+//        align-self: center;
+//        text-align:center;
+//        //you need these below to negate the user style sheet default from browser
+//        border: none;
+//         border-radius: 0;
+//         background-color: $color-navigation;
+//         text-decoration: none;
+//         border: 1.5px solid $color-navigation;
+//         border-radius: 1px;
     
       
   
      
 
-   }
+//    }
 
-   &__button:hover{
-    color: $color-navigation-text-hover;
-    background-color: rgba($color-navigation-button-hover,.5);
-    padding: 3rem;
-    border: 1.5px solid $color-navigation-text-hover;
-    border-radius: 1px;
-    cursor: pointer;
-   }
+//    &__button:hover{
+//     color: $color-navigation-text-hover;
+//     background-color: rgba($color-navigation-button-hover,.5);
+//     padding: 3rem;
+//     border: 1.5px solid $color-navigation-text-hover;
+//     border-radius: 1px;
+//     cursor: pointer;
+//    }
 
-
+   
 //    &__caret {
 //     display: inline-table;
 //     width: 0;
@@ -61,4 +141,3 @@
 //     border-right: 4px solid transparent;
 //     border-left: 4px solid transparent;
 //     }
-}

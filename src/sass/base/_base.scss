@@ -22,7 +22,7 @@ body{
 .container{
     display: grid;
     
-    grid-template-rows: 40vh repeat(4, min-content);
+    grid-template-rows: 50vh repeat(4, min-content);
 
     grid-template-columns:[body-start] minmax(min-content,4fr) [body-end nav-start] minmax(min-content,25vw) [nav-end];
 
