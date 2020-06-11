@@ -17,6 +17,7 @@ html{
 body{
     box-sizing: border-box;
 
+
 }
 
 li{
@@ -27,7 +28,7 @@ li{
 .container{
     display: grid;
     
-    grid-template-rows: 50vh;
+    grid-template-rows: 30vh;
 
     grid-template-columns:[full-start body-start] repeat(8, [col-start] minmax(min-content, calc(75vw/8) ) [col-end]) [body-end nav-start] minmax(min-content,25vw) [nav-end full-end];
 

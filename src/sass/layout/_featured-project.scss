@@ -1,9 +1,14 @@
 .feature-project{
     grid-column: body-start/body-end;
+    
+    display:grid;
+    
+    grid-row-gap:.5rem;
 
 
-
-
+    &__header{
+        color:$new-color-scheme-orange;
+    }
 
     &__img{
 
@@ -29,9 +34,14 @@
 
             padding:0 1rem;
 
-            background-color: $color-button;
-            color: white;
+            background-color: $new-color-scheme;
+            color: $new-color-scheme-text-lighter;
             border-radius: .5rem;
+
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;          /* Likely future */      
 
         }
 

@@ -53,3 +53,12 @@ $default-font-size: 2.5rem;
 // $grid-column-banner: [full-start] minmax(6rem, 3fr) 
 // [center-start] repeat(10, [col-start] 1fr [col-end]) [center-end] 
 // minmax(6rem, 3fr) [full-end];
+
+$new-color-scheme-background:rgb(251, 250, 251);
+$new-color-scheme:rgb(60, 56, 105);
+$new-color-scheme-blue:rgb(99, 121, 171);
+$new-color-scheme-dark-blue:rgb(39, 44, 70);
+$new-color-scheme-text:rgb(171, 182, 199);
+$new-color-scheme-text-2: rgb(211, 218, 220);
+$new-color-scheme-text-lighter: lighten($new-color-scheme-text-2,13%);
+$new-color-scheme-orange:rgb(247, 154, 49);

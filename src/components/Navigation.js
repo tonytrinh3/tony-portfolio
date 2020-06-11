@@ -14,7 +14,7 @@ const Navigation = () => {
             <ul className = "navigation__items">
                 <li className = "navigation__items__item">Projects</li>
                 <li className = "navigation__items__item"><a href="#skills" className = "navigation__items__item">Things That I Can Do</a></li>
-                <li className = "navigation__items__item">About</li>
+                <li className = "navigation__items__item">About / Work Experience</li>
                 <li className = "navigation__items__item"><a href="https://www.google.com" className="awef">Resume</a></li>
             </ul>
 
