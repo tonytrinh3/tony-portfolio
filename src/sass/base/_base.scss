@@ -19,11 +19,20 @@ body{
 
 }
 
+li{
+    list-style-position: inside;
+    list-style-type: none;
+}
+
 .container{
     display: grid;
     
-    grid-template-rows: 50vh repeat(4, min-content);
+    grid-template-rows: 50vh;
 
-    grid-template-columns:[body-start] minmax(min-content,4fr) [body-end nav-start] minmax(min-content,25vw) [nav-end];
+    grid-template-columns:[full-start body-start] repeat(8, [col-start] minmax(min-content, calc(75vw/8) ) [col-end]) [body-end nav-start] minmax(min-content,25vw) [nav-end full-end];
+
+    // grid-template-columns: [full-start] minmax(6rem, 1fr) 
+    // [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end]) [center-end] 
+    // minmax(6rem, 1fr) [full-end];
 
 }

@@ -1,0 +1,47 @@
+.feature-project{
+    grid-column: body-start/body-end;
+
+
+
+
+
+    &__img{
+
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    &__tools-used{
+
+        
+        display: grid;
+        grid-template-columns: repeat(4, minmax(min-content,max-content));
+        justify-items: start;
+        align-items: center;
+        column-gap: 1rem;
+
+
+        font-weight: 400;
+        font-size: 2rem;
+
+        &__items{
+
+            padding:0 1rem;
+
+            background-color: $color-button;
+            color: white;
+            border-radius: .5rem;
+
+        }
+
+        // &__items::after{
+            
+        // }
+   
+
+
+
+
+    }
+}

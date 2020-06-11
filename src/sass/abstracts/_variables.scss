@@ -20,7 +20,11 @@ $color-banner-content-background:#51758D;
 $color-heading:#323232;
 $color-body: #FFFFFF;
 
-$color-paragraph:#888;
+// $color-paragraph:#888;
+
+$color-paragraph:#323232;
+
+$color-hr: #323232;
 
 // $color-footer: #003262;
 $color-footer:#323232;
@@ -44,7 +48,7 @@ $color-card-link-background-hover: #EEEEEE;
 //FONT
 $default-font-size: 2.5rem;
 
-$grid-column-banner: [left-start] 1fr [left-end img-start] repeat(2,1fr) [img-end info-start] repeat(3,1fr) [info-end right-start] 1fr [right-end];
+
 
 // $grid-column-banner: [full-start] minmax(6rem, 3fr) 
 // [center-start] repeat(10, [col-start] 1fr [col-end]) [center-end] 

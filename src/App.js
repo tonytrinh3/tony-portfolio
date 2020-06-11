@@ -5,9 +5,7 @@ import Navigation from './components/Navigation';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-// import Breadcrumb from './components/Breadcrumb';
-import Banner from './components/Banner';
-import Cards from './components/Cards';
+import FeatureProject from './components/FeatureProject';
 import Footer from './components/Footer';
 
 // import './sass/main.scss';
@@ -19,14 +17,13 @@ class App extends React.Component{
       <div className = "container">
         <Header/>
         <Navigation/>
-        <About/>
-        <div className="u-hline"></div>
-        <Skills/>
-        <div className="u-hline"></div>
-        {/* <Breadcrumb /> */}
-        {/* <Banner />
-        <Cards /> */}
+        <FeatureProject />
+        <hr className="u-hline"/>
         <Projects />
+        <hr className="u-hline"/>
+        <Skills/>
+        <hr className="u-hline"/>
+        <About/>
         <Footer />
       </div>
   
