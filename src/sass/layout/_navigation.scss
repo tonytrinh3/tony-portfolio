@@ -8,81 +8,100 @@
     // grid-column: nav-start / nav-end;
     position: fixed;
     right: 0rem;
+  
     height: 100vh;
-    width: 25vw;
+    width:  $nav-width;
 
-    display: grid;
-    // grid-template-columns: ;
-    place-items: center;
 
     background-color: $new-color-scheme;
     color: $new-color-scheme-text-lighter;
-  
-    &__img{
-        border-radius: 50%;
-        object-fit: cover;
-        height: 20rem;
-        // width:100%;
-    
-        margin-top: 5rem;
-        
-    }
 
-    &__header{
-        // @extend %fa-icon;
-        // @extend .fab;
-        // margin-top: 10rem;
-        
-        // &:before {
-        //     content: fa-content($fa-var-twitter);
-        //   }
-
-
-    }
-
-    &__description{
-        margin: 0 8rem;
-        grid-column: 1/-1;
-
-        font-style: italic;
-        text-align: center;
-    }
-
-    &__items{
-        margin-right: 8rem;
-        margin-left: 8rem;
-        // margin-top: 5rem;
-        text-align: center;
-        width: 100%; 
-        
-        &__item{
-            // margin-bottom: 5rem;
-            padding: 2rem;
-        }
-
-        &__item:hover{
-            background-color: grey;
-        }
-        
-    }
-
-   
-
-    &__icons{
+    &__content{
+        // padding: 0 8rem;
        
-        display:grid;
-        grid-auto-flow: column;
-        grid-column-gap: 2rem;
-
-
-        &__icon{
- 
-            height: 4rem;
-            fill: red;
-            
      
+    
+        display: grid;
+        grid-template-rows: repeat(4,min-content) 10vh ;
+        place-items: center;
+        // row-gap: 2rem;
+
+        &__img{
+            border-radius: 50%;
+            object-fit: cover;
+            height: 18rem;
+            // width:100%;
+        
+            margin-top: 4rem;
+            
         }
+    
+        &__header{
+            margin-top: 2rem;
+            font-weight: 600;
+            // @extend %fa-icon;
+            // @extend .fab;
+            // margin-top: 10rem;
+            
+            // &:before {
+            //     content: fa-content($fa-var-twitter);
+            //   }
+    
+    
+        }
+    
+        &__quote{
+    
+            font-style: italic;
+            text-align: center;
+            font-size: 1.8rem;
+            margin: 2rem 8rem;
+        }
+    
+        &__items{
+          
+            // margin-top: 5rem;
+            text-align: center;
+            width: 100%; 
+            
+            &__item{
+                // margin-bottom: 5rem;
+                padding: 2rem;
+            }
+    
+            &__item:hover{
+                background-color: grey;
+            }
+            
+        }
+    
+       
+    
+        &__icons{
+           
+            display:grid;
+            grid-auto-flow: column;
+            grid-column-gap: 2rem;
+          
+            align-self: end;
+            
+
+            // margin-top: 20vh;
+    
+    
+            &__icon{
+     
+                height: 4rem;
+                // fill: red;
+                
+         
+            }
+        }
+
     }
+
+  
+ 
 
 }
 

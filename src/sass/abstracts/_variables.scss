@@ -62,3 +62,6 @@ $new-color-scheme-text:rgb(171, 182, 199);
 $new-color-scheme-text-2: rgb(211, 218, 220);
 $new-color-scheme-text-lighter: lighten($new-color-scheme-text-2,13%);
 $new-color-scheme-orange:rgb(247, 154, 49);
+
+$nav-width: 20vw;
+$body-width: calc(100vw - $nav-width);

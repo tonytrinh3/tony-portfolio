@@ -1,0 +1,12 @@
+.main-page{
+    display: grid;
+    
+    grid-template-rows: 30vh;
+
+    grid-template-columns:[full-start body-start] repeat(8, [col-start] minmax(min-content, calc(80vw/8) ) [col-end]) [body-end nav-start] $nav-width [nav-end full-end];
+
+    // grid-template-columns: [full-start] minmax(6rem, 1fr) 
+    // [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end]) [center-end] 
+    // minmax(6rem, 1fr) [full-end];
+
+}
