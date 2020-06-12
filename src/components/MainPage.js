@@ -19,9 +19,9 @@ const MainPage = () =>{
                 <Navigation/>
                 <FeatureProject />
                 <hr className="u-hline"/>
-                <Projects />
+                <Skills/> 
                 <hr className="u-hline"/>
-                <Skills/>
+                <Projects />
                 <hr className="u-hline"/>
                 <About/>
                 <Footer />

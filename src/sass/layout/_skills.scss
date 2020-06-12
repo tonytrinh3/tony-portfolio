@@ -15,18 +15,46 @@
 
     &__list{    
 
-        list-style-position: inside;
-        list-style-type: none;
+        column-gap: 1rem;
+        row-gap: 1rem;
 
         &--left{
             grid-column: 1/2;
+            display:grid;
+            grid-template-columns: repeat(2,max-content);
+
+            
         }
         &--right{
             grid-column: 2/3;
+            display:grid;
+            grid-template-columns: repeat(2,max-content);
+            align-content: start;
+            
+        }
+
+        &__header{
+            grid-column: 1 /-1;
+
+        }
+
+        &__icon{
+            height: 5rem;
+            width: 5rem;
+            grid-column: 1;
+       
+            align-self:start;
+          
         }
 
         &__item{
-            margin-bottom: 4rem;
+            
+            grid-column: 2;
+            align-self: center;
+
+      
         }
+
+
     }
 }
