@@ -17,19 +17,26 @@
 
         column-gap: 1rem;
         row-gap: 1rem;
+        word-wrap: break-word;
 
         &--left{
             grid-column: 1/2;
             display:grid;
-            grid-template-columns: repeat(2,max-content);
+            grid-template-columns: max-content 1fr;
+            padding-right: 1rem;
+            // background-color: red;
+            max-width: 100%;
+           
 
             
         }
         &--right{
             grid-column: 2/3;
             display:grid;
-            grid-template-columns: repeat(2,max-content);
+            grid-template-columns: max-content 1fr;
             align-content: start;
+            padding-left: 1rem;
+            // background-color: blue;
             
         }
 
@@ -39,19 +46,21 @@
         }
 
         &__icon{
+            //https://stackoverflow.com/questions/8977957/can-i-change-the-height-of-an-image-in-css-before-after-pseudo-elements
             height: 5rem;
             width: 5rem;
             grid-column: 1;
        
             align-self:start;
-          
+
+      
         }
 
         &__item{
             
             grid-column: 2;
             align-self: center;
-
+            word-wrap: normal;
       
         }
 

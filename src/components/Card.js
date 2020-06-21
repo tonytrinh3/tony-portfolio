@@ -1,13 +1,19 @@
 import React from 'react';
+import {renderToolsUsed} from './toolsUsed';
 
-
-const Card = (props) =>{
+const Card = ({title,img,languages,description}) =>{
     return (
         <div className="card u-margin-bottom-medium">
-            <img src={require("../img/ancadragan-laughing-crop.jpg")} alt="women_laughing" className="card__img"/>
+            <img className = "card__img"src={img}/>
             <div className="card__description">
-                <h3 className="card__descrtipion__title heading-med">Academics</h3>
-                <p className="card__descrtipion__paragraph paragraph">Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet. Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+                <h3 className="card__description__title heading-med">{title}</h3>
+                {renderToolsUsed(languages)}
+                <p className="card__description__paragraph paragraph">{description}</p>
+                <ul>
+                <li>Features</li>
+                <li>a</li>
+                <li>a</li>
+            </ul>
             </div>
         </div>
     )

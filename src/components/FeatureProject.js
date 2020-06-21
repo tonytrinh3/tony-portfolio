@@ -1,4 +1,7 @@
 import React from 'react';
+import {Link } from 'react-router-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 
 
@@ -6,7 +9,31 @@ const FeatureProject = () =>{
     return (
         <div className="feature-project u-section-first-padding">
            <h2 className="feature-project__header heading-huge ">Feature Project</h2>
-           <img src={require("../img/mock-airbnb-1.PNG")} alt="" className = "feature-project__img u-margin-bottom-small"/>
+           <Carousel autoPlay>
+            <div >
+                <img alt="" src={require("../img/mock-airbnb-1.PNG")}  />
+           
+            </div>
+            <div>
+                <img alt="" src={require("../img/mock-airbnb-front-2.PNG")} />
+               {/* <p className="legend">Legend 1</p> */}
+            </div>
+            <div>
+                <img alt="" src={require("../img/mock-airbnb-2.PNG")} />
+         
+            </div>
+            <div>
+                <img alt="" src={require("../img/mock-airbnb-3.PNG")} />
+     
+            </div>
+            <div>
+                <img alt="" src={require("../img/mock-airbnb-4.PNG")} />
+        
+            </div>
+       
+           </Carousel>
+           {/* <img src={require("../img/mock-airbnb-1.PNG")} alt="" className = "feature-project__img u-margin-bottom-small"/>
+           <img src={require('../img/mock-airbnb-front-page.PNG')} alt="" className = "feature-project__img u-margin-bottom-small"/> */}
            <h2 className="heading-med ">mock-airbnb</h2>
            <ul className="feature-project__tools-used" >
             <h3 className="feature-project__tools-used__header heading-small ">Tools Used: </h3>
@@ -28,7 +55,7 @@ const FeatureProject = () =>{
                <li className="feature-project__features__item">(subpoint) Reservations are rendered based on logged-in Google ID and read from the JSON server.</li>
            </ul>
 
-           <a href="" className="">Read More About It</a>
+           <Link className="" to={`/projects/mock-airbnb`}>Read More About It</Link>
         </div>
     )
 };

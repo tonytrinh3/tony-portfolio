@@ -1,7 +1,9 @@
 import React from 'react';
 import "./sass/main.scss";
+import { BrowserRouter,Route } from 'react-router-dom';
 import MainPage from './components/MainPage';
-import { BrowserRouter, Link } from 'react-router-dom';
+import ContentPage from './components/ContentPage';
+
 
 class App extends React.Component{
 
@@ -9,7 +11,8 @@ class App extends React.Component{
     return(
       <BrowserRouter >
         <div className = "container">
-          <Link path = "/" exact component ={ MainPage } />
+          <Route path = "/" exact component ={ MainPage } />
+          <Route path = "/projects/mock-airbnb" exact component ={ ContentPage } />
         </div>
       </BrowserRouter>
 
