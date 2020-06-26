@@ -10,10 +10,10 @@
         color:$new-color-scheme-orange;
     }
 
-    &__img{
+    &__carousel{
 
-        width: 100%;
-        object-fit: contain;
+        width: auto;
+     
         border-radius:$img-border-radius;
 
     }

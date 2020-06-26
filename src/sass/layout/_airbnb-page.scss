@@ -15,6 +15,26 @@
         width: 100%;
         object-fit: contain;
         border-radius:$img-border-radius;
+        justify-self: center;
+
+        &--2{
+            width: 65%;
+        }
+        &--3{
+            width: 65%;
+        }
+        &--4{
+            width: 50%;
+        }
+        &--5{
+            width: 65%;
+        }
+        &--6{
+            width: 50%;
+        }
+        &--7{
+            width: 80%;
+        }
 
     }
 

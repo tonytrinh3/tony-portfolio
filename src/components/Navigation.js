@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link } from 'react-router-dom';
 
 import headshot from "../img/headshot.jpg";
 import github from "../img/github-image.svg";
@@ -13,7 +14,8 @@ const Navigation = () => {
 
         <div className = "navigation">
             <div className="navigation__content">
-                <img src={headshot} alt="headshot" className="navigation__content__img"/>
+                {/* <Link className="navigation__content__img" to={`/`}><img src={headshot} alt="headshot" className="navigation__content__img"/></Link> */}
+                {/* <img src={headshot} alt="headshot" className="navigation__content__img"/> */}
                 <h2 className="navigation__content__header ">Tony Trinh</h2>
                 <p className = "navigation__content__quote">I got reprogrammed by a rogue AI and now I'm totally cray</p>
                 <ul className = "navigation__content__items">

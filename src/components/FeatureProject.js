@@ -2,35 +2,27 @@ import React from 'react';
 import {Link } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-
-
+import airbnbImg1 from "../img/mock-airbnb-11.PNG";
+import airbnbImg2 from "../img/mock-airbnb-front-2.PNG";
+import airbnbImg3 from "../img/mock-airbnb-22.PNG";
+import airbnbImg4 from "../img/mock-airbnb-33.PNG";
+import airbnbImg5 from "../img/mock-airbnb-4.PNG";
 
 const FeatureProject = () =>{
+
+    const airbnbImg = [airbnbImg1,airbnbImg2,airbnbImg3,airbnbImg4,airbnbImg5]
+
     return (
         <div className="feature-project u-section-first-padding">
            <h2 className="feature-project__header heading-huge ">Feature Project</h2>
-           <Carousel autoPlay>
-            <div >
-                <img alt="" src={require("../img/mock-airbnb-1.PNG")}  />
-           
-            </div>
-            <div>
-                <img alt="" src={require("../img/mock-airbnb-front-2.PNG")} />
-               {/* <p className="legend">Legend 1</p> */}
-            </div>
-            <div>
-                <img alt="" src={require("../img/mock-airbnb-2.PNG")} />
-         
-            </div>
-            <div>
-                <img alt="" src={require("../img/mock-airbnb-3.PNG")} />
-     
-            </div>
-            <div>
-                <img alt="" src={require("../img/mock-airbnb-4.PNG")} />
-        
-            </div>
-       
+           <Carousel autoPlay className="feature-project__carousel">
+                {airbnbImg.map((img,i)=>{
+                    return (
+                        <div key = {i}>
+                            <img alt={`airbnb img ${i}`} src={img}  />
+                        </div>
+                    )
+                })}
            </Carousel>
            {/* <img src={require("../img/mock-airbnb-1.PNG")} alt="" className = "feature-project__img u-margin-bottom-small"/>
            <img src={require('../img/mock-airbnb-front-page.PNG')} alt="" className = "feature-project__img u-margin-bottom-small"/> */}
@@ -54,8 +46,9 @@ const FeatureProject = () =>{
                <li className="feature-project__features__item">View your reservation on "Your Trips" page.</li>
                <li className="feature-project__features__item">(subpoint) Reservations are rendered based on logged-in Google ID and read from the JSON server.</li>
            </ul>
-
-           <Link className="" to={`/projects/mock-airbnb`}>Read More About It</Link>
+           <a className="aewf" href = "https://pure-woodland-05379.herokuapp.com/">Live Demo</a>
+           <a className="aewf" href = "https://github.com/tonytrinh3/mock-airbnb">Source Code</a>
+           <Link className="header-small" to={`/projects/mock-airbnb`}>Read More About It</Link>
         </div>
     )
 };

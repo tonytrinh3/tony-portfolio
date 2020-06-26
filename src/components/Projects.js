@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link } from 'react-router-dom';
 import Card from "./Card";
 import warReact from '../img/war-react.PNG';
 import portfolio from '../img/portfolio.PNG';
@@ -42,12 +43,8 @@ const Projects = () =>{
     return (
         <div className="projects u-section-padding">
            <h2 className="heading-big u-margin-bottom-small ">Other Front-End Development Projects</h2>
-            {/* <p className = "u-margin-bottom-medium">Faucibus sed lobortis aliquam lorem blandit. 
-            Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat 
-            praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. 
-            Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. 
-            Adipiscing cubilia elementum.</p> */}
             {renderCard()}
+            <Link className="header-small" to={`/projects/other`}>More Projects</Link>
     
         </div>
     )
