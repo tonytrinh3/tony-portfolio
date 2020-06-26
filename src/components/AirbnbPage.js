@@ -1,9 +1,26 @@
 import React from 'react';
-import {Link } from 'react-router-dom';
+import Header from './Header';
+import Navigation from './Navigation'
 
+import Footer from './Footer'
 
 
 const AirbnbPage = () =>{
+    return (
+
+           <div className = "main-page">
+                <Header/>
+                <Navigation/>
+                {content()}
+               
+                <Footer />
+            </div>
+
+    )
+};
+
+
+const content = () =>{
     return (
         <div className="airbnb-page u-section-first-padding">
            <h2 className="airbnb-page__header heading-huge ">Feature Project</h2>

@@ -8,10 +8,18 @@
 
 .u-section-padding{
     padding: 6rem 8rem;
+
+    @media only screen and (max-width:$bp-large){
+        padding: 3rem 4rem;
+    }
 }
 
 .u-section-first-padding{
     padding: 2rem 8rem;
+
+    @media only screen and (max-width:$bp-large){
+        padding: 2rem 2rem;
+    }
 }
 
 .u-hline { 

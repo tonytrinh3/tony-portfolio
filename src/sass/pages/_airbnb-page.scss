@@ -17,23 +17,48 @@
         border-radius:$img-border-radius;
         justify-self: center;
 
-        &--2{
+
+        &--2{ //redux done
+            width: 75%;
+
+            @media only screen and (max-width:$bp-large ){
+              width: 100%;
+            }
+        }
+        &--3{ //redux future
+            width: 75%;
+
+            @media only screen and (max-width:$bp-large){
+                width: 100%;
+            }
+        }
+        &--4{ //user login chart
             width: 65%;
+
+            @media only screen and (max-width:$bp-large){
+                width: 100%;
+            }
         }
-        &--3{
-            width: 65%;
+        &--5{ //restful convention img
+            width: 75%;
+
+            @media only screen and (max-width:$bp-large){
+                width: 100%;
+              }
         }
-        &--4{
-            width: 50%;
+        &--6{ //back end referencing
+             width: 75%;
+
+             @media only screen and (max-width:$bp-large){
+                width: 100%;
+            }
         }
-        &--5{
-            width: 65%;
-        }
-        &--6{
-            width: 50%;
-        }
-        &--7{
+        &--7{ //data model
             width: 80%;
+
+            @media only screen and (max-width:$bp-large){
+                width: 100%;
+            }
         }
 
     }

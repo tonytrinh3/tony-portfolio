@@ -70,5 +70,7 @@ $img-border-radius: 1rem;
 $default-box-shadow: 0rem 0rem 1rem .1rem rgba(72, 72, 72, .2); 
 
 //RESPONSE BREAKPOINTS
-$bp-largest: 75em; //1200 px /16
-$bp-large: 62.5em; //1000 px /16
+$bp-largest: 87em; //1350 px /16
+$bp-large: 68.75em; //1100 px /16 for ipad pro
+$bp-medium: 50em; //800 px / 16 for ipad pro
+$bp-small: 26.25em; //420 px / 16 for pixel 2 xl

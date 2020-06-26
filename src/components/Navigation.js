@@ -9,12 +9,31 @@ import twitter from "../img/twitter.svg";
 
 
 
-const Navigation = () => {
-    return(
+class Navigation extends React.Component {
 
-        <div className = "navigation">
+    constructor(props){
+        super(props);
+        this.state = {
+            toggleDropdown: false
+        }
+    }
+
+    toggleDropdown=()=>{
+       if(!this.state.toggleDropdown){
+           this.setState({
+               toggleDropdown:true
+           })
+       } else{
+            this.setState({
+                toggleDropdown:false
+            })
+       }
+    }
+
+    renderContent(){
+        return(
             <div className="navigation__content">
-                {/* <Link className="navigation__content__img" to={`/`}><img src={headshot} alt="headshot" className="navigation__content__img"/></Link> */}
+                <Link className="navigation__content__img" to={`/`}><img src={headshot} alt="headshot" className="navigation__content__img"/></Link>
                 {/* <img src={headshot} alt="headshot" className="navigation__content__img"/> */}
                 <h2 className="navigation__content__header ">Tony Trinh</h2>
                 <p className = "navigation__content__quote">I got reprogrammed by a rogue AI and now I'm totally cray</p>
@@ -23,7 +42,7 @@ const Navigation = () => {
                     <li className = "navigation__content__items__item">Feature Project</li>
                     <li className = "navigation__content__items__item"><a href="#skills" className = "navigation__content__items__item">Things That I Can Do</a></li>
                     <li className = "navigation__content__items__item">Other Projects</li>
-                   
+                
                     <li className = "navigation__content__items__item">About / Work Experience</li>
                     <li className = "navigation__content__items__item"><a href="https://www.google.com" className="awef">Resume</a></li>
                 </ul>
@@ -44,9 +63,24 @@ const Navigation = () => {
                 </div>
 
             </div>
-           
-        </div>
-    )
+       
+
+        )
+
+    }
+
+    render(){
+        return(
+
+            <div className = "navigation">
+                <div className="navigation__nav-btn" onClick={this.toggleDropdown}>button</div>
+                {this.state.toggleDropdown ? this.renderContent() : null }
+                {/* {this.renderContent()} */}
+            </div>
+        )
+
+    }
+   
 };
 
 export default Navigation

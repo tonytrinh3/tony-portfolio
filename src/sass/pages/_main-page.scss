@@ -13,8 +13,8 @@
 
 
     @media only screen and (max-width:$bp-largest){
-        grid-template-columns:[full-start body-start] repeat(8, [col-start] minmax(min-content, calc(100vw/8) ) [col-end]) 
-        [body-end full-end];
+        grid-template-columns:[full-start body-start] repeat(8, [col-start] minmax(min-content, calc(80vw/8)) [col-end]) 
+        [nav-start] minmax(min-content,$nav-width)[nav-end body-end full-end];
 
         grid-template-rows: min-content;
 
