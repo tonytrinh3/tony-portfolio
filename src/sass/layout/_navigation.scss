@@ -47,9 +47,29 @@
             height: 5rem;
             background-color:red;
             cursor: pointer;
+            
         }
        
 
+    }
+
+    &__mobile{
+
+        @media only screen and (max-width:$bp-largest){
+            grid-column: nav-start / nav-end;
+            position: fixed;
+            z-index: 1000;
+            right: 0rem;
+        }
+
+
+    }
+
+    &__pc{
+        @media only screen and (max-width:$bp-largest){
+            display: none;
+       
+        }
     }
    
 
@@ -79,13 +99,7 @@
         justify-items: center;
         row-gap: 2rem;
 
-        @media only screen and (max-width:$bp-largest){
-            // grid-column: nav-start / nav-end;
-            position: fixed;
-            z-index: 1000;
-            right: 0rem;
-       
-        }
+      
    
 
         &__img{

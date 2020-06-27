@@ -24,11 +24,14 @@ li{
 
 %heading{
     font-weight: 600;
+
+ 
 }
 
 .heading-huge{
    @extend %heading;
     font-size: 10rem; //28px
+   
 }
 
 

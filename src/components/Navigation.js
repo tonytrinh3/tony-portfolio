@@ -61,11 +61,22 @@ class Navigation extends React.Component {
                         <img src={twitter} alt="Twitter" className="navigation__content__icons__icon"/>
                     </a>
                 </div>
-
+                
+                {this.state.toggleDropdown ? <div className="wef" onClick={this.toggleDropdown}>close </div> : null }
             </div>
+       
        
 
         )
+
+    }
+
+    renderContentMobile(){
+        return (
+            <div className="navigation__mobile">
+                {this.renderContent()}
+            </div>
+            )
 
     }
 
@@ -74,8 +85,10 @@ class Navigation extends React.Component {
 
             <div className = "navigation">
                 <div className="navigation__nav-btn" onClick={this.toggleDropdown}>button</div>
-                {this.state.toggleDropdown ? this.renderContent() : null }
-                {/* {this.renderContent()} */}
+                {this.state.toggleDropdown ? this.renderContentMobile() : null }
+                <div className="navigation__pc">
+                    {this.renderContent()}
+                </div>
             </div>
         )
 

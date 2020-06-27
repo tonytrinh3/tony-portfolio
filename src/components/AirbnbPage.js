@@ -23,7 +23,7 @@ const AirbnbPage = () =>{
 const content = () =>{
     return (
         <div className="airbnb-page u-section-first-padding">
-           <h2 className="airbnb-page__header heading-huge ">Feature Project</h2>
+           <h2 className="airbnb-page__header heading-big ">mock-airbnb: Full-Stack Layout Study</h2>
            <img src={require("../img/mock-airbnb-11.PNG")} alt="" className = "airbnb-page__img airbnb-page__img--1 u-margin-bottom-small"/>
            <p>On the front-end, we are using React to build website components with Redux to allow a centralized state for all components within the project to access. 
                Below shows the current website functionalities and their corresponding actions to the Redux store in order to show a basic layout of the data flow through the cycle.</p>
