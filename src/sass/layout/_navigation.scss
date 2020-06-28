@@ -52,6 +52,15 @@
             // width: 100%;
             justify-self: center;
             margin-top: 2rem;
+
+        
+        }
+
+        &__img:hover{
+            // display: none;
+            // content: "Home";
+            background-color: $new-color-scheme;
+            color: $new-color-scheme-text-lighter; 
         }
     
         &__header{
@@ -73,11 +82,21 @@
             text-align: center;
             width: 100%; 
             margin: 0 4rem;
+          
+            
             &__item{
                 // grid-column: 1/-1;
-         
+                color: $new-color-scheme-text-lighter;
                 padding: 2rem;
                 // width: 10rem;
+
+                & a{
+                    color: $new-color-scheme-text-lighter;
+                }
+
+                & a:visited {
+                    color: $new-color-scheme-text-lighter;
+                  }
 
                 @media only screen and (max-width:$bp-largest){
                     padding: 1rem;
@@ -105,7 +124,7 @@
 
         &__dropdown{
             &__close{
-
+                cursor: pointer;
             }
         }
 

@@ -71,22 +71,22 @@ li{
 
 /* unvisited link */
 a:link {
-    color: $new-color-scheme-text-lighter;
+     color: $new-color-scheme-dark-blue;
   }
   
   /* visited link */
   a:visited {
-    color: $new-color-scheme-text-lighter;
+    color: $new-color-scheme-dark-blue;
   }
   
   /* mouse over link */
   a:hover {
-    color: $new-color-scheme-text-lighter;
+    color:$new-color-scheme-blue;
   }
   
   /* selected link */
   a:active {
-    color: $new-color-scheme-text-lighter;
+    color: $new-color-scheme-dark-blue;
   }
 
 //   &__btn{
