@@ -2,6 +2,7 @@ import React from 'react';
 import {Link } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import {renderToolsUsed} from './toolsUsed';
 import airbnbImg1 from "../img/mock-airbnb-11.PNG";
 import airbnbImg2 from "../img/mock-airbnb-front-2.PNG";
 import airbnbImg3 from "../img/mock-airbnb-22.PNG";
@@ -10,11 +11,13 @@ import airbnbImg5 from "../img/mock-airbnb-4.PNG";
 
 const FeatureProject = () =>{
 
-    const airbnbImg = [airbnbImg1,airbnbImg2,airbnbImg3,airbnbImg4,airbnbImg5]
+    const airbnbImg = [airbnbImg1,airbnbImg2,airbnbImg3,airbnbImg4,airbnbImg5];
+
+    const languages = ["Javascript","React","Redux", "Scss/Sass"];
 
     return (
         <div className="feature-project u-section-first-padding">
-           <h2 className="feature-project__header heading-huge ">Feature Project</h2>
+           <h2 className="feature-project__header heading-huge u-margin-bottom-small ">Feature Project</h2>
            <Carousel autoPlay className="feature-project__carousel">
                 {airbnbImg.map((img,i)=>{
                     return (
@@ -27,13 +30,7 @@ const FeatureProject = () =>{
            {/* <img src={require("../img/mock-airbnb-1.PNG")} alt="" className = "feature-project__img u-margin-bottom-small"/>
            <img src={require('../img/mock-airbnb-front-page.PNG')} alt="" className = "feature-project__img u-margin-bottom-small"/> */}
            <h2 className="heading-med ">mock-airbnb</h2>
-           <ul className="feature-project__tools-used" >
-            <h3 className="feature-project__tools-used__header heading-small ">Tools Used: </h3>
-                <li className="feature-project__tools-used__item">Javascript</li>
-               <li className="feature-project__tools-used__item">React JS</li>
-               <li className="feature-project__tools-used__item">Redux</li>
-               <li className="feature-project__tools-used__item">Sass / SCSS</li>
-           </ul>
+            {renderToolsUsed(languages)}
             {/* <p className = "">I created a mock Airbnb project to demonstrate my front-end development knowledge.</p> */}
             <h3 className=" heading-small ">Design Features: </h3>
             <ul className="feature-project__features" >

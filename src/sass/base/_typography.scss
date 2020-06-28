@@ -9,6 +9,8 @@ body {
 
 }
 
+
+
 a{
     // @extend .body;
     text-decoration: none;
@@ -25,24 +27,39 @@ li{
 %heading{
     font-weight: 600;
 
+
+   
+
  
 }
 
 .heading-huge{
    @extend %heading;
     font-size: 10rem; //28px
-   
+
+    @media only screen and (max-width: $bp-small){
+      line-height: 1;
+    }
+    
 }
 
 
 .heading-big{
     @extend %heading;
     font-size: 5rem; //28px
+
+    @media only screen and (max-width: $bp-small){
+      line-height: 1.1;
+    }
 }
 
 .heading-med{
     @extend %heading;
     font-size: 3rem; //28px
+
+    // @media only screen and (max-width: $bp-small){
+    //   line-height: 1;
+    // }
 }
 
 .heading-small{

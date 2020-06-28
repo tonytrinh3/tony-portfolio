@@ -5,6 +5,12 @@
     display:grid;
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
 
+
+    @media only screen and (max-width:$bp-medium){
+        grid-template-columns: minmax(min-content, 1fr);
+
+    }
+
     &__heading{
         grid-column: 1/-1;
     }
@@ -22,22 +28,31 @@
         &--left{
             grid-column: 1/2;
             display:grid;
-            grid-template-columns: max-content 1fr;
+            grid-template-columns: max-content minmax(min-content, 1fr);
             padding-right: 1rem;
             // background-color: red;
             max-width: 100%;
-           
 
-            
+            @media only screen and (max-width:$bp-medium){
+               grid-column: 1;
+        
+            }
         }
         &--right{
             grid-column: 2/3;
             display:grid;
-            grid-template-columns: max-content 1fr;
+            grid-template-columns: max-content minmax(min-content, 1fr);
             align-content: start;
             padding-left: 1rem;
             // background-color: blue;
-            
+
+            @media only screen and (max-width:$bp-medium){
+                grid-column: 1;
+                margin-top: 4rem;
+        
+            }
+
+
         }
 
         &__header{
@@ -50,18 +65,14 @@
             height: 5rem;
             width: 5rem;
             grid-column: 1;
-       
             align-self:start;
 
-      
         }
 
         &__item{
-            
             grid-column: 2;
             align-self: center;
             word-wrap: normal;
-      
         }
 
 

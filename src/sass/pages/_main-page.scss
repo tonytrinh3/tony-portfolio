@@ -3,7 +3,7 @@
     
     grid-template-rows: 30vh repeat(8,min-content);
 
-    grid-template-columns:[full-start body-start] repeat(8, [col-start] minmax(min-content, calc(80vw/8) ) [col-end]) 
+    grid-template-columns:[full-start body-start] repeat(8, [col-start] minmax(min-content, 1fr ) [col-end]) 
     [body-end nav-start] minmax(min-content,$nav-width)  [nav-end full-end];
 
 
@@ -12,13 +12,23 @@
     // minmax(6rem, 1fr) [full-end];
 
 
+    @media only screen and (min-width:$bp-largest-2){
+  
+
+      grid-template-columns:[full-start body-start] repeat(8, [col-start] minmax(min-content, 1fr ) [col-end]) 
+      [body-end nav-start] minmax(min-content,40rem)  [nav-end full-end];
+
+  }
+
+
+
     @media only screen and (max-width:$bp-largest){
         grid-template-columns:[full-start body-start] repeat(8, [col-start] minmax(min-content, calc(80vw/8)) [col-end]) 
         [nav-start] minmax(min-content,$nav-width)[nav-end body-end full-end];
 
         grid-template-rows: min-content;
 
-      }
+    }
 
 }
 

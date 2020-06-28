@@ -1,12 +1,17 @@
 .card{
     display:grid;
 
-    grid-template-columns: minmax(min-content, 30rem) 2fr;
+    grid-template-columns: minmax(min-content, 30rem) minmax(min-content, 1fr);
 
     // box-shadow: $default-box-shadow;
     // border-radius: $img-border-radius;
-    // background-color: red;
+    // // background-color: red;
     // padding:6rem 0;
+
+    @media only screen and (max-width: $bp-medium){
+        grid-template-columns: 1fr;
+        
+    }
  
 
     &__img{
@@ -14,8 +19,22 @@
         height: 30rem;
         object-fit: contain;
 
-        z-index: 1;
+      
         border-radius: $img-border-radius;
+
+        @media only screen and (max-width: $bp-medium){
+            grid-column: 1;
+          
+
+            
+        }
+
+        
+        @media only screen and (max-width: $bp-small){
+            width: 100%;
+          
+        }
+
     }
 
    
@@ -24,14 +43,27 @@
       
         grid-column: 2 / 3;
         align-self: center;
-        padding-left:5rem;
+        padding-left: 5rem;
 
         &__title{
+
+        
+
 
         }
 
         &__paragraph{
 
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            grid-column: 1;
+            padding-left: 0rem;
+            margin-top: 1rem;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            margin-top: 0rem;
         }
    
     }
