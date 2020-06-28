@@ -62,7 +62,7 @@ class Navigation extends React.Component {
                     </a>
                 </div>
                 
-                {this.state.toggleDropdown ? <div className="wef" onClick={this.toggleDropdown}>close </div> : null }
+                {this.state.toggleDropdown ? <div className="navigation__content__dropdown__close heading-med" onClick={this.toggleDropdown}>Close </div> : null }
             </div>
        
        
@@ -84,7 +84,9 @@ class Navigation extends React.Component {
         return(
 
             <div className = "navigation">
-                <div className="navigation__nav-btn" onClick={this.toggleDropdown}>button</div>
+                <div className="navigation__nav-btn" onClick={this.toggleDropdown}>
+                    <img src={require("../img/open-menu.svg")} alt="" className="skills__list__icon"/>
+                </div>
                 {this.state.toggleDropdown ? this.renderContentMobile() : null }
                 <div className="navigation__pc">
                     {this.renderContent()}

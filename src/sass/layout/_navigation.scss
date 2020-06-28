@@ -35,19 +35,12 @@
     
         background-color: $new-color-scheme;
         color: $new-color-scheme-text-lighter;
-        
-
-       
-
         display: grid;
         grid-template-rows: repeat(4, min-content) 1fr;
         grid-template-columns: minmax(20rem,max-content)  ;
         
         justify-items: center;
         row-gap: 2rem;
-
-      
-   
 
         &__img{
             grid-row: 1;
@@ -94,9 +87,7 @@
                 background-color: grey;
             }
         }
-    
-       
-    
+
         &__icons{
             grid-row: 5;
             align-self: end;
@@ -111,6 +102,19 @@
                 height: 4rem;
             }
         }
+
+        &__dropdown{
+            &__close{
+
+            }
+        }
+
+        @media only screen and (max-width:$bp-largest){
+            grid-template-rows: repeat(4, min-content) 1fr 1fr;
+         
+            
+        }
+
 
     }
 
@@ -136,10 +140,11 @@
             display: inline-block;
             grid-column: 1/-1;
             justify-self: end;
+            align-self: center;
             margin-right: 3rem;
             width: 5rem;
             height: 5rem;
-            background-color:red;
+            // background-color:red;
             cursor: pointer;
             
         }
