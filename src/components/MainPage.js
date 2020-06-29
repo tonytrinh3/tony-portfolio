@@ -12,11 +12,18 @@ import Footer from './Footer'
 
 
 const MainPage = () =>{
+
+    const ids = ["feature-project","skills","other-projects","about", "https://www.google.com"];
+    const contentTitle = ["Feature Project","Things That I Can Do","Other Projects","About / Work Experience","Resume"];
+
     return (
 
            <div className = "main-page">
                 <Header/>
-                <Navigation/>
+                <Navigation 
+                    ids = {ids}
+                    contentTitle = {contentTitle}
+                />
                 <FeatureProject />
                 <hr className="u-hline"/>
                 <Skills/> 

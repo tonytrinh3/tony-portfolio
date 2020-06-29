@@ -10,13 +10,18 @@ import portfolio from '../img/portfolio.PNG';
 
 
 const OtherProjectsPage = () =>{
+
+    const ids = ["front-end","back-end"];
+    const contentTitle = ["Front End Structure","Back End / Data Structure"];
     return (
 
            <div className = "main-page">
                 <Header/>
-                <Navigation/>
+                <Navigation
+                 ids = {ids}
+                 contentTitle = {contentTitle}
+                />
                 {Content()}
-               
                 <Footer />
             </div>
 
@@ -85,7 +90,7 @@ const Content = () =>{
     }
     
     return (
-        <div className="projects u-section-padding">
+        <div id = "other-projects" className="projects-page u-section-padding">
             <h2 className="heading-big u-margin-bottom-small ">Other Front-End Development Projects</h2>
             {renderCard()}
         

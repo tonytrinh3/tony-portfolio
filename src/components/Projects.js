@@ -41,7 +41,7 @@ const renderCard = () =>{
 
 const Projects = () =>{
     return (
-        <div className="projects u-section-padding">
+        <div id = "other-projects" className="projects u-section-padding">
            <h2 className="heading-big u-margin-bottom-small ">Other Front-End Development Projects</h2>
             {renderCard()}
             <Link className="header-small" to={`/projects/other`}>More Projects</Link>

@@ -6,6 +6,8 @@
     grid-row-gap:.5rem;
 
 
+
+
     &__header{
         color:$new-color-scheme-orange;
     }
@@ -36,8 +38,6 @@
     }
 
     &__tools-used{
-
-        
         display: grid;
         grid-template-columns: repeat(5, max-content);
         justify-items: start;
@@ -90,4 +90,12 @@
          
         }
     }
+
+    @media only screen and (max-width:$bp-largest){ //at ipad size, there will be a bar on the top
+
+        grid-row: 2;
+     
+
+    }
+
 }

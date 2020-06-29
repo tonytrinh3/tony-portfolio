@@ -6,8 +6,8 @@ import github from "../img/github-image.svg";
 import email from "../img/mail.svg";
 import linkedin from "../img/linkedin.svg";
 import twitter from "../img/twitter.svg";
-
-
+import close from '../img/close.svg';
+import home from '../img/home.svg';
 
 class Navigation extends React.Component {
 
@@ -30,21 +30,21 @@ class Navigation extends React.Component {
        }
     }
 
+    renderNavContent(){
+        return this.props.ids.map((id,i)=>{
+            return <li className = "navigation__content__items__item" key = {i}><a href={`#${id}`} className = "navigation__content__items__item">{this.props.contentTitle[i]}</a></li>
+        })
+    }
+
     renderContent(){
         return(
             <div className="navigation__content">
                 <Link className="navigation__content__img" to={`/`}><img src={headshot} alt="headshot" className="navigation__content__img"/></Link>
                 {/* <img src={headshot} alt="headshot" className="navigation__content__img"/> */}
                 <h2 className="navigation__content__header ">Tony Trinh</h2>
-                <p className = "navigation__content__quote">I got reprogrammed by a rogue AI and now I'm totally cray</p>
+                <p className = "navigation__content__quote">I am looking for a Front End Development Job</p>
                 <ul className = "navigation__content__items">
-                    
-                    <li className = "navigation__content__items__item">Feature Project</li>
-                    <li className = "navigation__content__items__item"><a href="#skills" className = "navigation__content__items__item">Things That I Can Do</a></li>
-                    <li className = "navigation__content__items__item">Other Projects</li>
-                
-                    <li className = "navigation__content__items__item">About / Work Experience</li>
-                    <li className = "navigation__content__items__item"><a href="https://www.google.com" className="awef">Resume</a></li>
+                    {this.renderNavContent()}
                 </ul>
 
                 <div className="navigation__content__icons">
@@ -62,7 +62,8 @@ class Navigation extends React.Component {
                     </a>
                 </div>
                 
-                {this.state.toggleDropdown ? <div className="navigation__content__dropdown__close heading-med" onClick={this.toggleDropdown}>Close </div> : null }
+                {this.state.toggleDropdown ? <img src={close} alt="Close" className="navigation__content__dropdown__close" onClick={this.toggleDropdown}/> : null }
+                
             </div>
        
        
@@ -84,9 +85,10 @@ class Navigation extends React.Component {
         return(
 
             <div className = "navigation">
-                <div className="navigation__nav-btn" onClick={this.toggleDropdown}>
-                    <img src={require("../img/open-menu.svg")} alt="" className="skills__list__icon"/>
-                </div>
+                
+                <img src={require("../img/open-menu.svg")} alt="" className="navigation__nav-btn" onClick={this.toggleDropdown}/>
+                <Link to={`/`} className="navigation__home-btn"><img src={home} alt="home" className="navigation__home-btn"/></Link>
+               
                 {this.state.toggleDropdown ? this.renderContentMobile() : null }
                 <div className="navigation__pc">
                     {this.renderContent()}

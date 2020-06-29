@@ -15,8 +15,9 @@ const FeatureProject = () =>{
 
     const languages = ["Javascript","React","Redux", "Scss/Sass"];
 
+
     return (
-        <div className="feature-project u-section-first-padding">
+        <div id = "feature-project" className="feature-project u-section-first-padding u-margin-bottom-small">
            <h2 className="feature-project__header heading-huge u-margin-bottom-small ">Feature Project</h2>
            <Carousel autoPlay className="feature-project__carousel">
                 {airbnbImg.map((img,i)=>{

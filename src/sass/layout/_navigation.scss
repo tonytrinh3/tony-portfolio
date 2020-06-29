@@ -8,8 +8,9 @@
     grid-column: nav-start / nav-end;
     grid-row: 1/-1;
  
-    // position: fixed;
-    // right: 0rem;
+    position: fixed;
+    right: 0rem;
+    width: $nav-width;
   
     // height: 100vh;
   
@@ -19,7 +20,24 @@
     // display: grid;
     // grid-template-columns: minmax(min-content,$nav-width);
 
+    @media only screen and (max-width:$bp-largest){ //at ipad size, there will be a bar on the top
+       
+        grid-column: full-start / full-end;
+        grid-row: 1;
+     
+        background-color: $new-color-scheme;
+        color: $new-color-scheme-text-lighter;
+        height: 10rem;
+        width: 100%;
 
+        position: fixed;
+        z-index:999;
+
+        display: grid;
+        grid-auto-flow: column;
+   
+        
+    }
 
     &__content{
         // padding: 0 8rem;
@@ -42,6 +60,14 @@
         justify-items: center;
         row-gap: 2rem;
 
+        @media only screen and (max-height:$bp-hei-small){
+            line-height: 1.2;
+        }
+
+        @media only screen and (max-width:$bp-largest){
+            grid-template-rows: repeat(6, min-content);
+        }
+
         &__img{
             grid-row: 1;
             grid-column: 1/-1;
@@ -52,6 +78,15 @@
             // width: 100%;
             justify-self: center;
             margin-top: 2rem;
+
+            @media only screen and (max-width:$bp-small){
+                height: 15rem;
+            }
+
+            @media only screen and (max-height:$bp-hei-small){
+                margin-top: 1rem;
+                height: 10rem;
+            }
 
         
         }
@@ -67,6 +102,10 @@
             // grid-column: 1/-1;
             margin-top: 2rem;
             font-weight: 600;
+
+            @media only screen and (max-height:$bp-hei-small){
+                margin-top: 0rem;
+            }
         }
     
         &__quote{
@@ -74,24 +113,26 @@
             font-style: italic;
             text-align: center;
             font-size: 1.8rem;
-            margin: 0rem 8rem;
+            margin: 0rem 4rem;
+
+            
+
         }
     
         &__items{
-            // grid-column: 1/-1;
             text-align: center;
             width: 100%; 
             margin: 0 4rem;
           
             
             &__item{
-                // grid-column: 1/-1;
+               
                 color: $new-color-scheme-text-lighter;
                 padding: 2rem;
-                // width: 10rem;
 
                 & a{
                     color: $new-color-scheme-text-lighter;
+                    
                 }
 
                 & a:visited {
@@ -112,12 +153,14 @@
             align-self: end;
             display:grid;
             grid-auto-flow: column;
-            grid-column-gap: 1.25vw;
+            grid-column-gap: 2rem;
             grid-template-rows: 4rem;
             margin-bottom: 5rem;
 
+            @media only screen and (max-width:$bp-largest){
+                margin-bottom: 1rem;
+            }
             &__icon{
-                
                 height: 4rem;
             }
         }
@@ -125,42 +168,36 @@
         &__dropdown{
             &__close{
                 cursor: pointer;
+                margin-bottom: 2rem;
+                height: 5rem;
+
+                @media only screen and (max-height:$bp-hei-small){
+                    
+                }
+
             }
         }
 
-        @media only screen and (max-width:$bp-largest){
-            grid-template-rows: repeat(4, min-content) 1fr 1fr;
-         
-            
-        }
+      
 
+      
 
     }
 
   
-    @media only screen and (max-width:$bp-largest){
-       
-        grid-column: full-start / full-end;
-        // grid-row: 1;
-     
-        background-color: $new-color-scheme;
-        color: $new-color-scheme-text-lighter;
-        height: 10rem;
 
-        display: grid;
-        
-    }
 
     &__nav-btn{
-
         display:none;
-
         @media only screen and (max-width:$bp-largest){
             display: inline-block;
-            grid-column: 1/-1;
+            grid-column: 2;
+            grid-row: 1;
             justify-self: end;
             align-self: center;
             margin-right: 3rem;
+            // margin-top: 2rem;
+          
             width: 5rem;
             height: 5rem;
             // background-color:red;
@@ -171,24 +208,46 @@
 
     }
 
-    &__mobile{
+    &__home-btn{
+        display:none;
+        @media only screen and (max-width:$bp-largest){
+            display: inline-block;
+            grid-column: 1;
+            grid-row: 1;
+            justify-self: start;
+            align-self: center;
+            margin-left: 1.5rem;
+            width: 5rem;
+            height: 5rem;
+            cursor: pointer;
+            
+        }
+
+    }
+
+
+    &__pc{
+        @media only screen and (max-width:$bp-largest){
+            display: none;
+        }
+    }
+
+    &__mobile{ // to use same content but one for drop down for mobile and one for pc only
 
         @media only screen and (max-width:$bp-largest){
-            grid-column: nav-start / nav-end;
             position: fixed;
             z-index: 1000;
             right: 0rem;
         }
 
-
-    }
-
-    &__pc{
-        @media only screen and (max-width:$bp-largest){
-            display: none;
-       
+        @media only screen and (max-width:$bp-small){
+            width: 70vw;
         }
+
+
     }
+
+  
 
 }
 

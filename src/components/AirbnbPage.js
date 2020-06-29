@@ -6,11 +6,18 @@ import Footer from './Footer'
 
 
 const AirbnbPage = () =>{
+
+    const ids = ["front-end","back-end"];
+    const contentTitle = ["Front End Structure","Back End / Data Structure"];
+    
     return (
 
            <div className = "main-page">
                 <Header/>
-                <Navigation/>
+                <Navigation
+                    ids = {ids}
+                    contentTitle = {contentTitle}
+                />
                 {content()}
                
                 <Footer />
@@ -25,6 +32,7 @@ const content = () =>{
         <div className="airbnb-page u-section-first-padding">
            <h2 className="airbnb-page__header heading-big ">mock-airbnb: Full-Stack Layout Study</h2>
            <img src={require("../img/mock-airbnb-11.PNG")} alt="" className = "airbnb-page__img airbnb-page__img--1 u-margin-bottom-small"/>
+           <h3 id = "front-end" className=" heading-medium ">Front End Structure</h3>
            <p>On the front-end, we are using React to build website components with Redux to allow a centralized state for all components within the project to access. 
                Below shows the current website functionalities and their corresponding actions to the Redux store in order to show a basic layout of the data flow through the cycle.</p>
            <img src={require('../img/mock-airbnb-front-page.PNG')} alt="" className = "airbnb-page__img airbnb-page__img--2 u-margin-bottom-small"/>
@@ -37,6 +45,8 @@ const content = () =>{
            <img src={require('../img/mock-airbnb-login.png')} alt="" className = "airbnb-page__img airbnb-page__img--4 u-margin-bottom-small"/>
            <p>Below shows the different actions and their corresponding routes that were used to request data from the website's back-end API.</p>
            <img src={require('../img/mock-airbnb-route.png')} alt="" className = "airbnb-page__img airbnb-page__img--5 u-margin-bottom-small"/>
+           
+           <h3 id = "back-end" className=" heading-medium ">Back End / Data Structure</h3>
            <p>Within our database, we currently have two collections, bookings (room listings) and users. The bookings collection currently has host, locations, reviews, and reservation dates being embedded within each records. 
             The users collection has a unique user id that is from Google Authentication, as well as a general id given by Axios, and reservations dates.
             Both the bookings and users collection are referencing each other (two-way referencing) in order for the each booking to know the user's who are reservating the rooms as well as user's to know which rooms they reserved via the bookingID.   </p>
