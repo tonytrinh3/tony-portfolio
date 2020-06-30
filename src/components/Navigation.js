@@ -14,7 +14,8 @@ class Navigation extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            toggleDropdown: false
+            toggleDropdown: false,
+            showHome: false
         }
     }
 
@@ -39,7 +40,14 @@ class Navigation extends React.Component {
     renderContent(){
         return(
             <div className="navigation__content">
-                <Link className="navigation__content__img" to={`/`}><img src={headshot} alt="headshot" className="navigation__content__img"/></Link>
+                 <img src={headshot} alt="headshot" className="navigation__content__img" />
+                <Link className="navigation__content__img" to={`/`}>
+                   
+                    
+                    <div class="navigation__content__overlay">
+                        <img src={home} alt="home" className="navigation__content__overlay__home"/>
+                    </div>
+                    </Link>
                 {/* <img src={headshot} alt="headshot" className="navigation__content__img"/> */}
                 <h2 className="navigation__content__header ">Tony Trinh</h2>
                 <p className = "navigation__content__quote heading-small">Looking for a Front End Development Job <br/> (as of July 2020)</p>
@@ -87,6 +95,7 @@ class Navigation extends React.Component {
             <div className = "navigation">
                 
                 <img src={require("../img/open-menu.svg")} alt="" className="navigation__nav-btn" onClick={this.toggleDropdown}/>
+
                 <Link to={`/`} className="navigation__home-btn"><img src={home} alt="home" className="navigation__home-btn"/></Link>
                
                 {this.state.toggleDropdown ? this.renderContentMobile() : null }

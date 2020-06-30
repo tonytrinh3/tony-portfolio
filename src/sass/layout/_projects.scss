@@ -3,7 +3,9 @@
     // background-color:orange
 
     &__more-projects::after{
-        content:" \2192";
+        content:" \21D2";
+        color:$new-color-scheme-orange;
+        //https://www.toptal.com/designers/htmlarrows/arrows/
     }
 }
 

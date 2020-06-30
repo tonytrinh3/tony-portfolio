@@ -20,6 +20,11 @@
     // display: grid;
     // grid-template-columns: minmax(min-content,$nav-width);
 
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+
     @media only screen and (max-width:$bp-largest){ //at ipad size, there will be a bar on the top
        
         grid-column: full-start / full-end;
@@ -78,6 +83,9 @@
             // width: 100%;
             justify-self: center;
             margin-top: 2rem;
+            
+            // transition: .5s ease;
+         
 
             @media only screen and (max-width:$bp-small){
                 height: 15rem;
@@ -88,15 +96,69 @@
                 height: 10rem;
             }
 
-        
+    
         }
 
-        &__img:hover{
-            // display: none;
-            // content: "Home";
+        //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
+        &__overlay{
+            grid-row: 1;
+            grid-column: 1/-1;
+            position: relative;
+          
+            // top: 0;
+            // bottom: 0;
+            // left: 20;
+            // right: 0;
+            height: 21rem;
+            width: 21rem;
+            border-radius: 50%;
+            opacity: 0;
+            transition: .5s ease;
             background-color: $new-color-scheme;
-            color: $new-color-scheme-text-lighter; 
+
+            @media only screen and (max-width:$bp-small){
+                height: 16rem;
+                width: 16rem;
+            }
+
+            @media only screen and (max-height:$bp-hei-small){
+                height: 11rem;
+                width: 11rem;
+            }
+
+
+
+            &__home{ // all of this in order for text to be center
+                color: $new-color-scheme-text-lighter;
+                font-size: 20px;
+                position: absolute;
+                height: 50%;
+                width: 50%;
+
+                // text-align: center;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+             
+            }
         }
+
+        &__overlay:hover{
+            opacity: 1;
+            z-index: 50;
+        }
+
+        // &__img:hover{
+        
+        //     background-color: red;
+        //     color: $new-color-scheme-text-lighter; 
+        //     opacity: .2;
+     
+
+
+        // }
     
         &__header{
             // grid-column: 1/-1;
@@ -161,6 +223,10 @@
             grid-column-gap: 2rem;
             grid-template-rows: 4rem;
             margin-bottom: 5rem;
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;          /* Likely future */      
 
             @media only screen and (max-width:$bp-largest){
                 margin-bottom: 1rem;
@@ -175,6 +241,10 @@
                 cursor: pointer;
                 margin-bottom: 2rem;
                 height: 5rem;
+                -webkit-user-select: none;  /* Chrome all / Safari all */
+                -moz-user-select: none;     /* Firefox all */
+                -ms-user-select: none;      /* IE 10+ */
+                user-select: none;          /* Likely future */      
 
                 @media only screen and (max-height:$bp-hei-small){
                     
@@ -194,6 +264,10 @@
 
     &__nav-btn{
         display:none;
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */      
         @media only screen and (max-width:$bp-largest){
             display: inline-block;
             grid-column: 2;
@@ -215,6 +289,11 @@
 
     &__home-btn{
         display:none;
+
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */      
         @media only screen and (max-width:$bp-largest){
             display: inline-block;
             grid-column: 1;
@@ -240,6 +319,7 @@
     &__mobile{ // to use same content but one for drop down for mobile and one for pc only
 
         @media only screen and (max-width:$bp-largest){
+            transition-duration: 6s;
             position: fixed;
             z-index: 1000;
             right: 0rem;

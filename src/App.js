@@ -4,6 +4,7 @@ import { BrowserRouter,Route } from 'react-router-dom';
 import MainPage from './components/MainPage';
 import AirbnbPage from './components/AirbnbPage';
 import OtherProjectsPage from './components/OtherProjectsPage';
+import ScrollToTop from './ScrollToTop';
 
 
 class App extends React.Component{
@@ -11,6 +12,8 @@ class App extends React.Component{
   render(){
     return(
       <BrowserRouter >
+        <ScrollToTop />
+ 
         <div className = "container">
           <Route path = "/" exact component ={ MainPage } />
           <Route path = "/projects/mock-airbnb" exact component ={ AirbnbPage } />

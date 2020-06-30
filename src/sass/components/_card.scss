@@ -28,6 +28,11 @@
       
         border-radius: $img-border-radius;
 
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */      
+
         @media only screen and (max-width: $bp-medium){
             grid-column: 1;
             
