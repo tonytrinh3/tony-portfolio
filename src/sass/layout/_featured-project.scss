@@ -5,7 +5,11 @@
     
     grid-row-gap:.5rem;
 
+    @media only screen and (max-width:$bp-largest){ //at ipad size, there will be a bar on the top
 
+        grid-row: 2;
+
+    }
 
 
     &__header{
@@ -91,11 +95,15 @@
         }
     }
 
-    @media only screen and (max-width:$bp-largest){ //at ipad size, there will be a bar on the top
+    &__links{
 
-        grid-row: 2;
-     
+        &--arrow::after{
+            content:" \2192";
+        }
 
     }
+  
+
+    
 
 }

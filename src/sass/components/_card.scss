@@ -3,10 +3,16 @@
 
     grid-template-columns: minmax(min-content, 30rem) minmax(min-content, 1fr);
 
-    // box-shadow: $default-box-shadow;
-    // border-radius: $img-border-radius;
+    
+   
     // // background-color: red;
     // padding:6rem 0;
+
+    border: solid .2rem $new-color-scheme-dark-blue;
+    border-radius: $img-border-radius;
+    box-shadow: $default-box-shadow;
+    padding: 1rem;
+    
 
     @media only screen and (max-width: $bp-medium){
         grid-template-columns: 1fr;
@@ -24,8 +30,6 @@
 
         @media only screen and (max-width: $bp-medium){
             grid-column: 1;
-          
-
             
         }
 
@@ -42,18 +46,13 @@
     &__description{
       
         grid-column: 2 / 3;
-        align-self: center;
+        align-self: start;
         padding-left: 5rem;
 
         &__title{
-
-        
-
-
         }
 
         &__paragraph{
-
         }
 
         @media only screen and (max-width: $bp-medium){

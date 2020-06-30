@@ -13,7 +13,7 @@ import Footer from './Footer'
 
 const MainPage = () =>{
 
-    const ids = ["feature-project","skills","other-projects","about", "https://www.google.com"];
+    const ids = ["feature-project","skills","projects","about", "https://www.google.com"];
     const contentTitle = ["Feature Project","Things That I Can Do","Other Projects","About / Work Experience","Resume"];
 
     return (

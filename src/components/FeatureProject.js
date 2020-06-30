@@ -44,9 +44,14 @@ const FeatureProject = () =>{
                <li className="feature-project__features__item">View your reservation on "Your Trips" page.</li>
                <li className="feature-project__features__item">(subpoint) Reservations are rendered based on logged-in Google ID and read from the JSON server.</li>
            </ul>
-           <a className="aewf" href = "https://pure-woodland-05379.herokuapp.com/">Live Demo</a>
-           <a className="aewf" href = "https://github.com/tonytrinh3/mock-airbnb">Source Code</a>
-           <Link className="header-small" to={`/projects/mock-airbnb`}>Read More About It</Link>
+          <ul>
+              <li><a className = "feature-project__links" href = "https://pure-woodland-05379.herokuapp.com/">Live Demo</a></li>
+              <li><a className = "feature-project__links" href = "https://github.com/tonytrinh3/mock-airbnb">Source Code</a></li>
+              <li><Link className = "feature-project__links feature-project__links--arrow" to={`/projects/mock-airbnb`}>Read More About It</Link></li>
+          </ul>
+          
+           
+           
         </div>
     )
 };

@@ -26,11 +26,6 @@ li{
 
 %heading{
     font-weight: 600;
-
-
-   
-
- 
 }
 
 .heading-huge{
@@ -67,27 +62,32 @@ li{
     font-size: 2.5rem; //28px
 }
 
-
+.link{
+  color: $new-color-scheme-orange;
+  font-weight:600;
+}
 
 /* unvisited link */
 a:link {
-     color: $new-color-scheme-dark-blue;
+     color: $new-color-scheme-orange;
+     font-weight:600;
   }
   
-  /* visited link */
-  a:visited {
-    color: $new-color-scheme-dark-blue;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color:$new-color-scheme-blue;
-  }
-  
-  /* selected link */
-  a:active {
-    color: $new-color-scheme-dark-blue;
-  }
+/* visited link */
+a:visited {
+  color: $new-color-scheme-orange;
+}
+
+/* mouse over link */
+a:hover {
+  // color: lighten($new-color-scheme-orange,20%);
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: $new-color-scheme-orange-darker;
+}
 
 //   &__btn{
 

@@ -1,4 +1,9 @@
 .projects{
     grid-column: body-start/body-end;
     // background-color:orange
+
+    &__more-projects::after{
+        content:" \2192";
+    }
 }
+
