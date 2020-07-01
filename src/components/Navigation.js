@@ -40,17 +40,16 @@ class Navigation extends React.Component {
     renderContent(){
         return(
             <div className="navigation__content">
-                 <img src={headshot} alt="headshot" className="navigation__content__img" />
+                <img src={headshot} alt="headshot" className="navigation__content__img" />
                 <Link className="navigation__content__img" to={`/`}>
-                   
-                    
                     <div class="navigation__content__overlay">
                         <img src={home} alt="home" className="navigation__content__overlay__home"/>
                     </div>
-                    </Link>
+                </Link>
                 {/* <img src={headshot} alt="headshot" className="navigation__content__img"/> */}
                 <h2 className="navigation__content__header ">Tony Trinh</h2>
-                <p className = "navigation__content__quote heading-small">Looking for a Front End Development Job <br/> (as of July 2020)</p>
+                <p className = "navigation__content__citizen ">US Citizen</p>
+                <p className = "navigation__content__quote heading-small">Looking for a <span>Front End Development </span>Job <br/> (as of July 2020)</p>
                 <ul className = "navigation__content__items">
                     {this.renderNavContent()}
                 </ul>

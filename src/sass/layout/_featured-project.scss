@@ -98,12 +98,14 @@
             }
 
             &--sub{
-                margin-left: 2rem;
+                margin-left: 4rem;
+                margin-bottom: .3rem;
             }
 
             &--sub::before{
                 content:"\2023";
                 color:$new-color-scheme-dark-blue;
+                
             }
           
 

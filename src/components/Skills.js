@@ -17,7 +17,7 @@ const Skills = () =>{
                 <img src={require("../img/git-icon.png")} alt="git" className="skills__list__icon"/>
                 <li className="skills__list__item skills__list__item--4">Git and NPM</li>
                 <img src={require("../img/building.svg")} alt="building" className="skills__list__icon"/>
-                <li className="skills__list__item skills__list__item--4">4 years working and collaborating with other engineers and architects in the Building Industry </li>
+                <li className="skills__list__item skills__list__item--4">4 years Consulting with Engineers/Architects in the Building Industry </li>
                 {/* <img src={require("../img/html-5.svg")} alt="" className="skills__list__icon"/>
                 <li className="skills__list__item skills__list__item--4">REST-ful Convention</li> */}
             </ul>

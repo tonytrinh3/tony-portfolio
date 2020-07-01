@@ -9,7 +9,7 @@ const cardContents = [
         title: "War, The Card Game",
         img: warReact,
         languages:["Javascript","React", "Scss/Sass"],
-        description: "War the Card Game. Built in React. Uses Card Api. Uses similar functions from  the previous JS only version of this game.",
+        description: "Uses Card Api. Uses similar functions from  the previous JS only version of this game.",
         liveLink: "https://tonytrinh3.github.io/war-react/",
         sourceLink: "https://github.com/tonytrinh3/war-react"
     },

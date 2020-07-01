@@ -1,7 +1,7 @@
 .main-page{
     display: grid;
     
-    grid-template-rows: 30vh repeat(8,min-content);
+    grid-template-rows: 10vh repeat(8,min-content);
 
     grid-template-columns:[full-start body-start] repeat(8, [col-start] minmax(min-content, 1fr ) [col-end]) 
     [body-end nav-start] minmax(min-content,$nav-width)  [nav-end full-end];

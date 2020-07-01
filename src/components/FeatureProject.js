@@ -36,13 +36,13 @@ const FeatureProject = () =>{
             <h3 className=" heading-small ">Design Features: </h3>
             <ul className="feature-project__features" >
                <li className="feature-project__features__item feature-project__features__item--main">Login using your Google account</li>
-               <li className="feature-project__features__item feature-project__features__item--sub">Your first name and picture from Google will be shown on the navigation bar.</li>
-               <li className="feature-project__features__item feature-project__features__item--main">Browse different types of listings and view their features, descriptions, and amenities.</li>
-               <li className="feature-project__features__item feature-project__features__item--sub">Listings are read (via REST-ful convention) from a JSON server under a "Bookings" collection.</li>
-               <li className="feature-project__features__item feature-project__features__item--main">Reserve a room based on a start / end date and guest amount</li>
-               <li className="feature-project__features__item feature-project__features__item--sub">Reservations are connected to your Google ID, and POSTed on a JSON server under a "User" collection.</li>
+               <li className="feature-project__features__item feature-project__features__item--sub">Your name and picture shown on the nav bar.</li>
+               <li className="feature-project__features__item feature-project__features__item--main">Browse and view different listings.</li>
+               <li className="feature-project__features__item feature-project__features__item--sub">Listings are read (via REST-ful convention) from a server.</li>
+               <li className="feature-project__features__item feature-project__features__item--main">Reserve a room based on dates and guest.</li>
+               <li className="feature-project__features__item feature-project__features__item--sub">Reservations are connected to your name, and POSTed on the server.</li>
                <li className="feature-project__features__item feature-project__features__item--main">View your reservation on "Your Trips" page.</li>
-               <li className="feature-project__features__item feature-project__features__item--sub">Reservations are rendered based on logged-in Google ID and read from the JSON server.</li>
+               <li className="feature-project__features__item feature-project__features__item--sub">Reservations are rendered based on Google ID and read the server.</li>
            </ul>
           <ul>
               <li><a className = "feature-project__links" href = "https://pure-woodland-05379.herokuapp.com/">Live Demo</a></li>
