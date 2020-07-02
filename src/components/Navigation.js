@@ -8,6 +8,7 @@ import linkedin from "../img/linkedin.svg";
 import twitter from "../img/twitter.svg";
 import close from '../img/close.svg';
 import home from '../img/home.svg';
+import menu from "../img/open-menu.svg"
 
 class Navigation extends React.Component {
 
@@ -69,7 +70,7 @@ class Navigation extends React.Component {
                     </a>
                 </div>
                 
-                {this.state.toggleDropdown ? <img src={close} alt="Close" className="navigation__content__dropdown__close" onClick={this.toggleDropdown}/> : null }
+                {/* {this.state.toggleDropdown ? <img src={close} alt="Close" className="navigation__content__dropdown__close" onClick={this.toggleDropdown}/> : null } */}
                 
             </div>
        
@@ -92,8 +93,8 @@ class Navigation extends React.Component {
         return(
 
             <div className = "navigation">
-                
-                <img src={require("../img/open-menu.svg")} alt="" className="navigation__nav-btn" onClick={this.toggleDropdown}/>
+                {!this.state.toggleDropdown ? <img src={menu} alt="" className="navigation__nav-btn" onClick={this.toggleDropdown}/> : <img src={close} alt="" className="navigation__nav-btn" onClick={this.toggleDropdown}/> }
+                {/* <img src={require("../img/open-menu.svg")} alt="" className="navigation__nav-btn" onClick={this.toggleDropdown}/> */}
                 {/* <p className="awef">Looking for a <span>Front End Development </span>Job <br/> (as of July 2020)</p> */}
                 <Link to={`/`} className="navigation__home-btn"><img src={home} alt="home" className="navigation__home-btn"/></Link>
                

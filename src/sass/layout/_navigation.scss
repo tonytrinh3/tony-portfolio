@@ -34,7 +34,7 @@
         width: 100%;
 
         position: fixed;
-        z-index:999;
+        // z-index:999;
 
         display: grid;
         grid-auto-flow: column;
@@ -160,7 +160,7 @@
 
         &__overlay:hover{
             opacity: 1;
-            z-index: 50;
+          
         }
 
         // &__img:hover{
@@ -266,7 +266,7 @@
                 -moz-user-select: none;     /* Firefox all */
                 -ms-user-select: none;      /* IE 10+ */
                 user-select: none;          /* Likely future */      
-
+                z-index:1000;
                 @media only screen and (max-height:$bp-hei-small){
                     
                 }
@@ -299,6 +299,8 @@
             height: 5rem;
             // background-color:red;
             cursor: pointer;
+
+            z-index:1000;
             
         }
        
@@ -339,7 +341,7 @@
         @media only screen and (max-width:$bp-largest){
             transition-duration: 6s;
             position: fixed;
-            z-index: 1000;
+            // z-index: 1000;
             right: 0rem;
         }
 
