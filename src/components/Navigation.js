@@ -94,7 +94,7 @@ class Navigation extends React.Component {
             <div className = "navigation">
                 
                 <img src={require("../img/open-menu.svg")} alt="" className="navigation__nav-btn" onClick={this.toggleDropdown}/>
-
+                {/* <p className="awef">Looking for a <span>Front End Development </span>Job <br/> (as of July 2020)</p> */}
                 <Link to={`/`} className="navigation__home-btn"><img src={home} alt="home" className="navigation__home-btn"/></Link>
                
                 {this.state.toggleDropdown ? this.renderContentMobile() : null }

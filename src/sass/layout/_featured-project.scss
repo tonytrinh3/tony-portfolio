@@ -33,9 +33,9 @@
         user-select: none;          /* Likely future */      
 
 
-        @media only screen and (min-width:$bp-largest-2 ){ //for larger ultrawide screen
-            width: 70%;
-        }
+        // @media only screen and (min-width:$bp-largest-2 ){ //for larger ultrawide screen
+        //     width: 70%;
+        // }
 
         @media only screen and (max-width:$bp-small ){ 
             grid-column:1;

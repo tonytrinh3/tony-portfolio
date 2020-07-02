@@ -4,6 +4,9 @@
     display:grid;
     
     grid-row-gap:.5rem;
+  
+
+    // justify-items: center;
 
 
     &__header{
@@ -30,9 +33,6 @@
         &--1{ //front page
             width: 100%;
 
-            @media only screen and (min-width:$bp-largest-2 ){ //for larger ultrawide screen
-                width: 180rem;
-            }
 
 
             @media only screen and (max-width:$bp-large ){
@@ -43,11 +43,7 @@
         }
 
         &--2{ //redux done
-            width: 75%;
-
-            @media only screen and (min-width:$bp-largest-2 ){ //for larger ultrawide screen
-                width: 100rem;
-            }
+            width: 60%;
           
 
             @media only screen and (max-width:$bp-large ){
@@ -55,44 +51,29 @@
             }
         }
         &--3{ //redux future
-            width: 75%;
-
-            @media only screen and (min-width:$bp-largest-2 ){ //for larger ultrawide screen
-                width: 100rem;
-            }
+            width: 60%;
 
             @media only screen and (max-width:$bp-large){
                 width: 100%;
             }
         }
         &--4{ //user login chart
-            width: 65%;
-
-            @media only screen and (min-width:$bp-largest-2 ){ //for larger ultrawide screen
-                width: 80rem;
-            }
+            width: 45%;
 
             @media only screen and (max-width:$bp-large){
                 width: 100%;
             }
         }
         &--5{ //restful convention img
-            width: 75%;
-
-            @media only screen and (min-width:$bp-largest-2 ){ //for larger ultrawide screen
-                width: 100rem;
-            }
+            width: 60%;
 
             @media only screen and (max-width:$bp-large){
                 width: 100%;
               }
         }
         &--6{ //back end referencing
-             width: 75%;
+             width: 60%;
 
-             @media only screen and (min-width:$bp-largest-2 ){ //for larger ultrawide screen
-                width: 100rem;
-            }
 
              @media only screen and (max-width:$bp-large){
                 width: 100%;
@@ -101,9 +82,7 @@
         &--7{ //data model
             width: 80%;
 
-            @media only screen and (min-width:$bp-largest-2 ){ //for larger ultrawide screen
-                width: 130rem;
-            }
+     
 
             @media only screen and (max-width:$bp-large){
                 width: 100%;
