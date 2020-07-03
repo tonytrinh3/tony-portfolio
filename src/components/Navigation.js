@@ -59,7 +59,7 @@ class Navigation extends React.Component {
                     <a href="https://github.com/tonytrinh3">
                         <img src={github} alt="Github" className="navigation__content__icons__icon"/>
                     </a>
-                    <a href="mailto:tony@tonywtrinh.com">
+                    <a href="mailto:tony.w.trinh3@gmail.com">
                         <img src={email} alt="Email" className="navigation__content__icons__icon"/>
                     </a>
                     <a href="https://www.linkedin.com/in/tony-trinh-b7b99919b/">

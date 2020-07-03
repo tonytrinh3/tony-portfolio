@@ -38,11 +38,11 @@ const FeatureProject = () =>{
                <li className="feature-project__features__item feature-project__features__item--main">Login using your Google account</li>
                <li className="feature-project__features__item feature-project__features__item--sub">Your name and picture shown on the nav bar.</li>
                <li className="feature-project__features__item feature-project__features__item--main">Browse and view different listings.</li>
-               <li className="feature-project__features__item feature-project__features__item--sub">Listings are read (via REST-ful convention) from a server.</li>
+               <li className="feature-project__features__item feature-project__features__item--sub">Listings are read (via CRUD operations) from a server.</li>
                <li className="feature-project__features__item feature-project__features__item--main">Reserve a room based on dates and guest.</li>
-               <li className="feature-project__features__item feature-project__features__item--sub">Reservations are connected to your name, and POSTed on the server.</li>
+               <li className="feature-project__features__item feature-project__features__item--sub">Reservations are connected to your name, and created on the server.</li>
                <li className="feature-project__features__item feature-project__features__item--main">View your reservation on "Your Trips" page.</li>
-               <li className="feature-project__features__item feature-project__features__item--sub">Reservations are rendered based on Google ID and read the server.</li>
+               <li className="feature-project__features__item feature-project__features__item--sub">Reservations are rendered based on Google ID.</li>
            </ul>
           <ul>
               <li><a className = "feature-project__links" href = "https://pure-woodland-05379.herokuapp.com/">Live Demo</a></li>

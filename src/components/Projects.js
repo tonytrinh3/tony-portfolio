@@ -6,10 +6,10 @@ import portfolio from '../img/portfolio.PNG';
 
 const cardContents = [
     {
-        title: "War, The Card Game",
+        title: "War, The Card Game v2",
         img: warReact,
         languages:["Javascript","React", "Scss/Sass"],
-        description: "Uses Card Api. Uses similar functions from  the previous JS only version of this game.",
+        description: "Uses Deck Api. Uses similar functions from  the previous JS only version of this game.",
         liveLink: "https://tonytrinh3.github.io/war-react/",
         sourceLink: "https://github.com/tonytrinh3/war-react"
     },

@@ -128,17 +128,19 @@
             transition: .5s ease;
             background-color: $new-color-scheme;
 
+
            
 
-            @media only screen and (max-width:$bp-small){
-                height: 16rem;
-                width: 16rem;
+            @media only screen and (max-width:$bp-small){ //pixel 2 xl
+                display: none;
+                // height: 16rem;
+                // width: 16rem;
             }
 
-            @media only screen and (max-height:$bp-hei-small){
-                height: 11rem;
-                width: 11rem;
-            }
+            // @media only screen and (max-height:$bp-hei-small){
+            //     height: 11rem;
+            //     width: 11rem;
+            // }
 
 
 

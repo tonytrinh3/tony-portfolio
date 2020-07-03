@@ -6,6 +6,7 @@ import Footer from './Footer'
 import Card from "./Card";
 import airbnb from "../img/mock-airbnb-11.PNG";
 import warReact from '../img/war-react.PNG';
+import war from '../img/war.PNG';
 import portfolio from '../img/portfolio.PNG';
 
 const ids = [];
@@ -34,18 +35,26 @@ const Content = () =>{
             title: "Mock-Airbnb Website",
             img: airbnb,
             languages:["Javascript","React", "Redux","Scss/Sass"],
-            description: "Mimic website to Airbnb to showcase proficency in CSS, React, Redux. Uses REST-ful convention to fetch data from a local json file.",
+            description: "Mimic website to Airbnb to showcase proficency in CSS, React, Redux. Data from the website communicates with JSON API to store user’s data.",
             liveLink: "https://github.com/tonytrinh3/mock-airbnb",
             sourceLink: "https://pure-woodland-05379.herokuapp.com/"
 
         },
         {
-            title: "War, The Card Game",
+            title: "War, The Card Game v2",
             img: warReact,
             languages:["Javascript","React", "Scss/Sass"],
-            description: "Uses Card Api. Uses similar functions from  the previous JS only version of this game.",
+            description: "Uses Deck Api. Uses similar functions from  the previous JS only version of this game.",
             liveLink: "https://tonytrinh3.github.io/war-react/",
             sourceLink: "https://github.com/tonytrinh3/war-react"
+        },
+        {
+            title: "War, The Card Game v1",
+            img: war,
+            languages:["Javascript", "Scss/Sass"],
+            description: "Uses Deck Api. Built with vanilla JS.",
+            liveLink: "https://tonytrinh3.github.io/war/",
+            sourceLink: "https://github.com/tonytrinh3/war"
         },
         {
             title: "Tony Trinh Portfolio ",
