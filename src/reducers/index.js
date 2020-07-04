@@ -53,14 +53,14 @@ import portfolio from '../img/portfolio.PNG';
 // }
 
 const projectsReducer = ()=>{
-  return [
+  return [https://master.d14eeu5976vw2v.amplifyapp.com/
     {
         title: "Mock-Airbnb Website",
         img: airbnb,
         languages:["Javascript","React", "Redux","Scss/Sass"],
         description: "Mimic website to Airbnb to showcase proficency in CSS, React, Redux. Data from the website communicates with JSON API to store user’s data.",
-        liveLink: "https://github.com/tonytrinh3/mock-airbnb",
-        sourceLink: "https://master.d14eeu5976vw2v.amplifyapp.com/"
+        liveLink: "https://master.d14eeu5976vw2v.amplifyapp.com/",
+        sourceLink: "https://github.com/tonytrinh3/mock-airbnb"
 
     },
     {
