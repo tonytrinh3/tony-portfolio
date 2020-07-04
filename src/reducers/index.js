@@ -53,7 +53,7 @@ import portfolio from '../img/portfolio.PNG';
 // }
 
 const projectsReducer = ()=>{
-  return [https://master.d14eeu5976vw2v.amplifyapp.com/
+  return [
     {
         title: "Mock-Airbnb Website",
         img: airbnb,
