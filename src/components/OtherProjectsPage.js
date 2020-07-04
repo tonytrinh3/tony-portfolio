@@ -1,73 +1,38 @@
 import React from 'react';
 import Header from './Header';
 import Navigation from './Navigation'
+import {connect} from 'react-redux'
 
 import Footer from './Footer'
 import Card from "./Card";
-import airbnb from "../img/mock-airbnb-11.PNG";
-import warReact from '../img/war-react.PNG';
-import war from '../img/war.PNG';
-import portfolio from '../img/portfolio.PNG';
 
 const ids = [];
 const contentTitle = [];
 
-const OtherProjectsPage = () =>{
-    return (
+class OtherProjectsPage extends React.Component{
 
-           <div className = "main-page">
-                <Header/>
-                <Navigation
-                 ids = {ids}
-                 contentTitle = {contentTitle}
-                />
-                {Content()}
-                <Footer />
-            </div>
-
-    )
+    render(){
+        // console.log(this.props.projects);
+        return (
+            <div className = "main-page">
+                    <Header/>
+                    <Navigation
+                    ids = {ids}
+                    contentTitle = {contentTitle}
+                    />
+                    { content(this.props.projects)}
+                    <Footer />
+                </div>
+        )
+    }
 };
 
-const Content = () =>{
+const content =(projects)=>{
+    const renderCard = ()=>{
+       
 
-    const cardContents = [
-        {
-            title: "Mock-Airbnb Website",
-            img: airbnb,
-            languages:["Javascript","React", "Redux","Scss/Sass"],
-            description: "Mimic website to Airbnb to showcase proficency in CSS, React, Redux. Data from the website communicates with JSON API to store user’s data.",
-            liveLink: "https://github.com/tonytrinh3/mock-airbnb",
-            sourceLink: "https://pure-woodland-05379.herokuapp.com/"
-
-        },
-        {
-            title: "War, The Card Game v2",
-            img: warReact,
-            languages:["Javascript","React", "Scss/Sass"],
-            description: "Uses Deck Api. Uses similar functions from  the previous JS only version of this game.",
-            liveLink: "https://tonytrinh3.github.io/war-react/",
-            sourceLink: "https://github.com/tonytrinh3/war-react"
-        },
-        {
-            title: "War, The Card Game v1",
-            img: war,
-            languages:["Javascript", "Scss/Sass"],
-            description: "Uses Deck Api. Built with vanilla JS.",
-            liveLink: "https://tonytrinh3.github.io/war/",
-            sourceLink: "https://github.com/tonytrinh3/war"
-        },
-        {
-            title: "Tony Trinh Portfolio ",
-            img: portfolio,
-            languages:["Javascript","React", "Scss/Sass"],
-            description: "Portfolio Website. Mobile Ready.",
-            liveLink: "https://protected-meadow-71280.herokuapp.com/",
-            sourceLink: "https://github.com/tonytrinh3/tony-portfolio"
-        }
-    ]
-    
-    const renderCard = () =>{
-        return cardContents.map((content,i)=>{
+        // console.log(this.props.projects);
+        return projects.map((project,i)=>{
             const {
                 title,
                 img,
@@ -75,7 +40,7 @@ const Content = () =>{
                 description,
                 liveLink,
                 sourceLink
-            } = content
+            } = project
     
             return <Card 
                 key = {i}
@@ -88,17 +53,21 @@ const Content = () =>{
             />
         })
     }
-    
-    return (
-        <div id = "other-projects" className="projects-page u-section-padding">
-            <h2 className="heading-big u-margin-bottom-small ">Other Front-End Development Projects</h2>
-            {renderCard()}
-        
- 
-        </div>
 
-    )
+        return (
+            <div id = "other-projects" className="projects-page u-section-padding">
+                <h2 className="heading-big u-margin-bottom-small ">Other Front-End Development Projects</h2>
+                {renderCard()}
+            </div>
+        )
 };
 
-export default OtherProjectsPage;
+const mapStateToProps =(state)=>{
+    console.log(state);
+    return{
+        projects: Object.values(state.projects)
+    }
+}
+
+export default connect(mapStateToProps,null)(OtherProjectsPage);
 

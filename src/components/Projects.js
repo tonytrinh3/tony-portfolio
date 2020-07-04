@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link } from 'react-router-dom';
 import Card from "./Card";
+import {connect} from 'react-redux'
+
+
 import warReact from '../img/war-react.PNG';
 import portfolio from '../img/portfolio.PNG';
 
@@ -18,13 +21,13 @@ const cardContents = [
         img: portfolio,
         languages:["Javascript","React", "Scss/Sass"],
         description: "Portfolio Website. Mobile Ready.",
-        liveLink: "https://protected-meadow-71280.herokuapp.com/",
+        liveLink: "https://master.d24dxum0mrr5fo.amplifyapp.com/",
         sourceLink: "https://github.com/tonytrinh3/tony-portfolio"
     },
 ]
 
-const renderCard = () =>{
-    return cardContents.map((content,i)=>{
+const renderCard = (projects) =>{
+    return projects.map((project,i)=>{
         const {
             title,
             img,
@@ -32,7 +35,7 @@ const renderCard = () =>{
             description,
             liveLink,
             sourceLink
-        } = content
+        } = project
 
         return <Card 
             key = {i}
@@ -47,16 +50,28 @@ const renderCard = () =>{
     })
 }
 
+//only want the first two element
+class Projects extends React.Component{
+    render(){
+        return (
+            <div id = "projects" className="projects u-section-padding">
+               <h2 className="heading-big u-margin-bottom-small ">Other Front-End Development Projects</h2>
+                {renderCard(this.props.projects.slice(0,2))} 
+                <Link className="header-small projects__more-projects" to={`/projects/other`}>More Projects</Link>
+        
+            </div>
+        )
+    }
 
-const Projects = () =>{
-    return (
-        <div id = "projects" className="projects u-section-padding">
-           <h2 className="heading-big u-margin-bottom-small ">Other Front-End Development Projects</h2>
-            {renderCard()}
-            <Link className="header-small projects__more-projects" to={`/projects/other`}>More Projects</Link>
-    
-        </div>
-    )
 };
 
-export default Projects;
+const mapStateToProps =(state)=>{
+    console.log(state);
+    return{
+        projects: Object.values(state.projects)
+    }
+}
+
+export default connect(mapStateToProps,null)(Projects);
+
+

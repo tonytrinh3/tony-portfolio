@@ -43,7 +43,7 @@ class Navigation extends React.Component {
             <div className="navigation__content">
                 <img src={headshot} alt="headshot" className="navigation__content__img" />
                 <Link className="navigation__content__img" to={`/`}>
-                    <div class="navigation__content__overlay">
+                    <div className="navigation__content__overlay">
                         <img src={home} alt="home" className="navigation__content__overlay__home"/>
                     </div>
                 </Link>
