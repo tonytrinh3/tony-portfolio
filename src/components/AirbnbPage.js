@@ -7,7 +7,7 @@ import Footer from './Footer'
 
 const AirbnbPage = () =>{
 
-    const ids = ["front-end","back-end"];
+    const ids = ["#front-end","#back-end"];
     const contentTitle = ["Front End Structure","Back End / Data Structure"];
     
     return (

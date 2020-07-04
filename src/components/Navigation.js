@@ -34,7 +34,7 @@ class Navigation extends React.Component {
 
     renderNavContent(){
         return this.props.ids.map((id,i)=>{
-            return <li className = "navigation__content__items__item" key = {i}><a href={`#${id}`} className = "navigation__content__items__item">{this.props.contentTitle[i]}</a></li>
+            return <li className = "navigation__content__items__item" key = {i}><a href={`${id}`} className = "navigation__content__items__item">{this.props.contentTitle[i]}</a></li>
         })
     }
 

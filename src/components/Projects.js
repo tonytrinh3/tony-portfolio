@@ -4,28 +4,6 @@ import Card from "./Card";
 import {connect} from 'react-redux'
 
 
-import warReact from '../img/war-react.PNG';
-import portfolio from '../img/portfolio.PNG';
-
-const cardContents = [
-    {
-        title: "War, The Card Game v2",
-        img: warReact,
-        languages:["Javascript","React", "Scss/Sass"],
-        description: "Uses Deck Api. Uses similar functions from  the previous JS only version of this game.",
-        liveLink: "https://tonytrinh3.github.io/war-react/",
-        sourceLink: "https://github.com/tonytrinh3/war-react"
-    },
-    {
-        title: "Tony Trinh Portfolio ",
-        img: portfolio,
-        languages:["Javascript","React", "Scss/Sass"],
-        description: "Portfolio Website. Mobile Ready.",
-        liveLink: "https://master.d24dxum0mrr5fo.amplifyapp.com/",
-        sourceLink: "https://github.com/tonytrinh3/tony-portfolio"
-    },
-]
-
 const renderCard = (projects) =>{
     return projects.map((project,i)=>{
         const {
