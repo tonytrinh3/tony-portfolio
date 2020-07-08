@@ -17,10 +17,6 @@ import airbnbImg5 from "../img/mock-airbnb-4.PNG";
 
 class FeatureProject extends React.Component{
 
-    
-
-
-
     render(){
         const airbnbImg = [airbnbImg1,airbnbImg2,airbnbImg3,airbnbImg4,airbnbImg5];
 
