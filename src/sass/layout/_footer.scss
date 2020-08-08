@@ -1,6 +1,7 @@
 .footer{
     background-color: $new-color-scheme-dark-blue;
     grid-column: full-start/full-end;
+    grid-row: 1000;
   
     display: grid;
     // grid-template-columns:[full-start] .5rem

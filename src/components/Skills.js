@@ -18,17 +18,13 @@ const Skills = () =>{
                 <li className="skills__list__item skills__list__item--4">Git and NPM</li>
                 <img src={require("../img/building.svg")} alt="building" className="skills__list__icon"/>
                 <li className="skills__list__item skills__list__item--4">4 years Consulting with Engineers/Architects</li>
-                {/* <img src={require("../img/html-5.svg")} alt="" className="skills__list__icon"/>
-                <li className="skills__list__item skills__list__item--4">REST-ful Convention</li> */}
+                <img src={require("../img/nodejs.svg")} alt="node" className="skills__list__icon"/>
+                <li className="skills__list__item skills__list__item--5">Node JS with Express</li>
+                <img src={require("../img/mongodb.svg")} alt="mongo" className="skills__list__icon"/>
+                <li className="skills__list__item skills__list__item--6">MongoDB with Mongoose JS</li>
             </ul>
             <ul className="skills__list skills__list--right">
             <li className="skills__list__header heading-small ">Currently Learning:</li>
-                <img src={require("../img/nodejs.svg")} alt="node" className="skills__list__icon"/>
-                <li className="skills__list__item skills__list__item--5">Node JS with Express</li>
-                {/* <img src={require("../img/Expressjs.png")} alt="" className=" skills__list__icon--express"/> */}
-                {/* <li className="skills__list__item skills__list__item--6">Express JS</li> */}
-                <img src={require("../img/mongodb.svg")} alt="mongo" className="skills__list__icon"/>
-                <li className="skills__list__item skills__list__item--6">MongoDB with Mongoose JS</li>
                 <img src={require("../img/typescript.svg")} alt="typescript" className="skills__list__icon"/>
                 <li className="skills__list__item skills__list__item--7">Typescript</li>
                 <img src={require("../img/jest-logo.svg")} alt="jest" className="skills__list__icon"/>
