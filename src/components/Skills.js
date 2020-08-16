@@ -16,8 +16,8 @@ const Skills = () =>{
                 <li className="skills__list__item skills__list__item--3">React JS with Redux</li>
                 <img src={require("../img/git-icon.png")} alt="git" className="skills__list__icon"/>
                 <li className="skills__list__item skills__list__item--4">Git and NPM</li>
-                <img src={require("../img/building.svg")} alt="building" className="skills__list__icon"/>
-                <li className="skills__list__item skills__list__item--4">4 years Consulting with Engineers/Architects</li>
+                {/* <img src={require("../img/building.svg")} alt="building" className="skills__list__icon"/>
+                <li className="skills__list__item skills__list__item--4">4 years Consulting with Engineers/Architects</li> */}
                 <img src={require("../img/nodejs.svg")} alt="node" className="skills__list__icon"/>
                 <li className="skills__list__item skills__list__item--5">Node JS with Express</li>
                 <img src={require("../img/mongodb.svg")} alt="mongo" className="skills__list__icon"/>
