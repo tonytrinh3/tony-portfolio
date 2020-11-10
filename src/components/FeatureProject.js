@@ -13,6 +13,8 @@ import airbnbImg3 from "../img/mock-airbnb-22.PNG";
 import airbnbImg4 from "../img/mock-airbnb-33.PNG";
 import airbnbImg5 from "../img/mock-airbnb-4.PNG";
 
+import rightArrow from 'img/right-arrow.svg';
+
 
 
 class FeatureProject extends React.Component{
@@ -55,7 +57,8 @@ class FeatureProject extends React.Component{
               <ul>
                   <li><a className = "feature-project__links" href = {airbnbProject.liveLink}>Live Demo</a></li>
                   <li><a className = "feature-project__links" href = {airbnbProject.sourceLink}>Source Code</a></li>
-                  <li><Link className = "feature-project__links feature-project__links--arrow" to={`/projects/mock-airbnb`}>Read More About It</Link></li>
+                  <li><Link className = "feature-project__links feature-project__links--arrow"  to={`/projects/mock-airbnb`}>Read More About It</Link></li>
+                {/* <img className = "feature-project__links--arrow" src = {rightArrow} alt = "right-arrow"/> */}
               </ul>
               
                
