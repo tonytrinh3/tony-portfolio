@@ -23,7 +23,7 @@ class FeatureProject extends React.Component{
         const airbnbImg = [airbnbImg1,airbnbImg2,airbnbImg3,airbnbImg4,airbnbImg5];
 
         //TODO: HAVE TO PULL FROM REDUCER BETTER WAY    
-        const airbnbProject = this.props.projects[2];
+        const airbnbProject = this.props.projects[3];
 
 
         return (

@@ -21,12 +21,12 @@ const projectsReducer = ()=>{
 
     },
     {
-        title: "Construction Bidder (Nov 2020 on-going)",
+        title: "Construction Bidder (Nov 2020)",
         img: monday,
         languages:["Javascript","React", "Redux","CSS/Bootstrap"],
         description: "As apart of monday apps challenge hackathon, this app allows contractors to bid on projects through the monday.com platform.",
-        liveLink: "#",
-        sourceLink: "#"
+        liveLink: "https://youtu.be/WDM4aAZo5xw",
+        sourceLink: "https://github.com/MondayChallenge"
 
     },
     {
