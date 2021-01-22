@@ -1,5 +1,5 @@
 import React from 'react';
-import {renderToolsUsed} from './toolsUsed';
+import {RenderToolsUsed} from '../utils/ToolsUsed';
 
 const Card = ({title,img,languages,description,liveLink,sourceLink,i}) =>{
     return (
@@ -7,7 +7,7 @@ const Card = ({title,img,languages,description,liveLink,sourceLink,i}) =>{
             <img className = "card__img" src={img} alt = {title}/>
             <div className="card__description">
                 <h3 className="card__description__title heading-med " >{title}</h3>
-                {renderToolsUsed(languages)}
+                {RenderToolsUsed(languages)}
                 <p className="card__description__paragraph">{description}</p>
                 {/* <ul>
                     <li>Features</li>

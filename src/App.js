@@ -2,8 +2,8 @@ import React from 'react';
 import "./sass/main.scss";
 import { BrowserRouter,Route } from 'react-router-dom';
 import MainPage from './components/MainPage';
-import AirbnbPage from './components/AirbnbPage';
-import OtherProjectsPage from './components/OtherProjectsPage';
+import AirbnbPage from './views/AirbnbPage';
+import OtherProjectsPage from './views/OtherProjectsPage';
 import ScrollToTop from './ScrollToTop';
 
 

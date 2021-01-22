@@ -14,7 +14,7 @@ const projectsReducer = ()=>{
     {
         title: "Hazard Tracker (Nov 2020 on-going)",
         img: hazardTracker,
-        languages:["Javascript","React", "Redux","Material-UI"],
+        languages:["Javascript","React", "Redux","Scss/Sass"],
         description: "In collaboration with the Environmental Defense Fund, Progressive Web App that allow citizens to view and report pollution events within their neighborhood via text/photos/videos. The reports will be used by officials for environmental advocacy.",
         liveLink: "#",
         sourceLink: "#"

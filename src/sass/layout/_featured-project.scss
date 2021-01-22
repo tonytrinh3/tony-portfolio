@@ -6,9 +6,7 @@
     grid-row-gap:.5rem;
 
     @media only screen and (max-width:$bp-largest){ //at ipad size, there will be a bar on the top
-
         grid-row: 2;
-
     }
 
 
@@ -18,11 +16,6 @@
 
     &__carousel{
 
-        // display: grid;
-        // grid-template-columns: min-content;
-
-        // width: 100%;
-     
         border-radius:$img-border-radius;
 
         justify-self: center;
@@ -32,81 +25,21 @@
         -ms-user-select: none;      /* IE 10+ */
         user-select: none;          /* Likely future */      
 
-
-        // @media only screen and (min-width:$bp-largest-2 ){ //for larger ultrawide screen
-        //     width: 70%;
-        // }
-
         @media only screen and (max-width:$bp-small ){ 
             grid-column:1;
             justify-self: start;
-            // display: none;
         }
-
 
     }
 
-    &__tools-used{
-        display: grid;
-        grid-template-columns: repeat(5, max-content);
-        justify-items: start;
-        align-items: center;
-        column-gap: 1rem;
-
-
-        font-weight: 400;
-        font-size: 2rem;
-
-        &__item{
-
-            padding:0 1rem;
-
-            background-color: $new-color-scheme;
-            color: $new-color-scheme-text-lighter;
-            border-radius: .5rem;
-
-            -webkit-user-select: none;  /* Chrome all / Safari all */
-            -moz-user-select: none;     /* Firefox all */
-            -ms-user-select: none;      /* IE 10+ */
-            user-select: none;          /* Likely future */      
-
-        }
-
-     
-
-        // &__items::after{
-            
-        // }
-   
-
-
-
-
-    }
+ 
 
     &__features{
-      
-        // display: grid;
-        // align-items: center;
-
+      margin-left: 1rem;
         &__item{
 
-            &--main::before{
-                content:"\2022";
-                color:$new-color-scheme-dark-blue;
-                 //https://www.toptal.com/designers/htmlarrows/arrows/
-            }
-
-            &--sub{
-                margin-left: 4rem;
-                margin-bottom: .3rem;
-            }
-
-            &--sub::before{
-                content:"\2023";
-                color:$new-color-scheme-dark-blue;
-                
-            }
+          
+             
           
 
         }
@@ -114,16 +47,8 @@
         
     }
 
-    &__links{
-
-        &--arrow::after{
-            content:" \21D2";
-            color:$new-color-scheme-orange;
-        }
-
-        // &--arrow{
-        //    height: 10rem;
-        // }
+    &__links:hover{
+       
 
     }
   

@@ -2,8 +2,8 @@
     grid-column: body-start/body-end;
     // background-color:orange
 
-    &__more-projects::after{
-        content:" \21D2";
+    &__more-projects{
+       
         color:$new-color-scheme-orange;
         //https://www.toptal.com/designers/htmlarrows/arrows/
     }

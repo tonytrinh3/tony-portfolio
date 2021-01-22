@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './Header';
 import Navigation from './Navigation'
 
-import AirbnbPage from './AirbnbPage'
+import AirbnbPage from '../views/AirbnbPage'
 
 import Footer from './Footer'
 

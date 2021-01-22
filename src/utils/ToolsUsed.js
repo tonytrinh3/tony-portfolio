@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const renderToolsUsed = (languages) =>{
+export const RenderToolsUsed = (languages) =>{
     return(
         <ul className="tools-used" >
         <h3 className="tools-used__header heading-small ">Tools Used: </h3>

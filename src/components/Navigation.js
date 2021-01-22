@@ -50,7 +50,7 @@ class Navigation extends React.Component {
                 {/* <img src={headshot} alt="headshot" className="navigation__content__img"/> */}
                 <h2 className="navigation__content__header ">Tony Trinh</h2>
                 <p className = "navigation__content__citizen ">US Citizen</p>
-                <p className = "navigation__content__quote heading-small">Looking for a <span>Front End Development </span>Job <br/> (as of October 2020)</p>
+                <p className = "navigation__content__quote heading-small">Looking for a <span>Front End Development </span>Position <br/> (as of October 2020)</p>
                 <ul className = "navigation__content__items">
                     {this.renderNavContent()}
                 </ul>

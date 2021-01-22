@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './Header';
-import Navigation from './Navigation'
+import Header from '../components/Header';
+import Navigation from '../components/Navigation'
 import {connect} from 'react-redux'
 
-import Footer from './Footer'
-import Card from "./Card";
+import Footer from '../components/Footer'
+import Card from "../components/Card";
 
 const ids = [];
 const contentTitle = [];
