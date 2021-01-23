@@ -15,7 +15,7 @@ const MainPage = (props) =>{
 
     const ids = ["#feature-project","#skills","#projects","#about", "https://docs.google.com/document/d/13bopMoB0u2IBDBegGcxsZ1siC3OxIH6JjbyvKjjH6zk/edit?usp=sharing"];
     const contentTitle = ["Feature Project","Things That I Can Do","Other Projects","About","Resume"];
-    console.log(props);
+    
     return (
 
            <div className = "main-page">

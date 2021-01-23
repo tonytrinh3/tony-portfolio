@@ -32,7 +32,7 @@ const renderCard = (projects) => {
 
 //only want the first two element
 const Projects = (props) => {
-    console.log(props);
+  
   return (
     <div id="projects" className="projects u-section-padding">
       <h2 className="heading-big u-margin-bottom-small ">
