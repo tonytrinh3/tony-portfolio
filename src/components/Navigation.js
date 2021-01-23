@@ -2,13 +2,13 @@ import React from 'react';
 import {Link } from 'react-router-dom';
 
 import headshot from "../img/headshot.jpg";
-import github from "../img/github-image.svg";
-import email from "../img/mail.svg";
-import linkedin from "../img/linkedin.svg";
-import twitter from "../img/twitter.svg";
-import close from '../img/close.svg';
-import home from '../img/home.svg';
-import menu from "../img/open-menu.svg"
+import github from "../img/social-media-icons/github-image.svg";
+import email from "../img/core-icons/mail.svg";
+import linkedin from "../img/social-media-icons/linkedin.svg";
+import twitter from "../img/social-media-icons/twitter.svg";
+import close from '../img/core-icons/close.svg';
+import home from '../img/core-icons/home.svg';
+import menu from "../img/core-icons/open-menu.svg"
 
 class Navigation extends React.Component {
 

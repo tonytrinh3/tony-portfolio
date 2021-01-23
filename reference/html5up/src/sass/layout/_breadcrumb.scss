@@ -1,0 +1,42 @@
+.breadcrumb{
+    grid-column: full-start / full-end;
+    background-color: $color-breadcrumb-background;
+    padding: .8rem 1.5rem;
+   
+    font-size: 1.6rem;
+   
+    
+    ul{
+        list-style: none;
+        
+       li{
+           display: inline-block;
+        //    padding-left: 0.5rem;
+           color: $color-breadcrumb-text;
+       }
+
+       li + li:before{
+        content: "/\00a0";
+        padding: 0 .5rem;
+        color: $color-breadcrumb-text;
+       }
+        
+
+    }
+
+    &__link{
+        &,
+        &:link,
+        &:visited{
+            color: $color-link-text;
+       
+
+        }
+    }
+
+    &__link:hover{
+        color:$color-link-hover;
+    }
+
+    
+}

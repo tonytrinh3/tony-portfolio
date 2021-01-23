@@ -1,25 +1,28 @@
 import React from "react";
 
-import HTMLIcon from "../img/html-css-js.png";
-import SASSIcon from "../img/Sass_Logo_Color.svg";
-import ReactIcon from "../img/react-redux.PNG";
-import GitIcon from "../img/git-icon.png";
-import NodeIcon from "../img/nodejs.svg";
-import MongoDBIcon from "../img/mongodb.svg";
+import HTMLIcon from "img/language-icons/html-css-js.png";
+import SASSIcon from "../img/language-icons/Sass_Logo_Color.svg";
+import ReactIcon from "../img/language-icons/react-redux.PNG";
+import GitIcon from "../img/language-icons/git-icon.png";
+import NodeIcon from "../img/language-icons/nodejs.svg";
+import MongoDBIcon from "../img/language-icons/mongodb.svg";
 
-import JavaIcon from "../img/java.svg";
-import SpringIcon from "../img/spring-icon.svg";
-import MySQLIcon from "../img/mysql.svg";
-import FlutterIcon from "../img/flutter.svg";
-import FirebaseIcon from "../img/Firebase_Logo_Logomark.svg";
-import D3Icon from "../img/d3-icon.svg";
-import GraphQLIcon from "../img/graphql-icon.svg";
-import AWSIcon from "../img/aws-icon.svg";
+import JavaIcon from "../img/language-icons/java.svg";
+import SpringIcon from "../img/language-icons/spring-icon.svg";
+import MySQLIcon from "../img/language-icons/mysql.svg";
+import FlutterIcon from "../img/language-icons/flutter.svg";
+import FirebaseIcon from "../img/language-icons/Firebase_Logo_Logomark.svg";
+import D3Icon from "../img/language-icons/d3-icon.svg";
+import GraphQLIcon from "../img/language-icons/graphql-icon.svg";
+import AWSIcon from "../img/language-icons/aws-icon.svg";
 
-import TypescriptIcon from "../img/typescript.svg";
-import JestIcon from "../img/jest-logo.svg";
+import TypescriptIcon from "../img/language-icons/typescript.svg";
+import JestIcon from "../img/language-icons/jest-logo.svg";
 
 import { ImgText } from "utils/ImgText";
+
+
+import * as stdWords from "utils/standardWords";
 
 const Skills = () => {
   return (
@@ -36,15 +39,15 @@ const Skills = () => {
         <ImgText
           img={HTMLIcon}
           direction={"left"}
-          text={"HTML / CSS / Javascript"}
+          text={`${stdWords.HTML} / ${stdWords.CSS} / ${stdWords.JAVASCRIPT}`}
         />
         <ImgText img={SASSIcon} direction={"left"} text={"Sass / SCSS"} />
         <ImgText
           img={ReactIcon}
           direction={"left"}
-          text={"React JS with Redux"}
+          text={`${stdWords.REACT} with ${stdWords.REDUX}`}
         />
-        <ImgText img={GitIcon} direction={"left"} text={"Git and NPM"} />
+        <ImgText img={GitIcon} direction={"left"} text={`${stdWords.GIT} and ${stdWords.NPM}`} />
       </ul>
 
       <ul className="skills__list ">
@@ -55,14 +58,14 @@ const Skills = () => {
         <ImgText
           img={SpringIcon}
           direction={"left"}
-          text={"Spring (Hibernate, Maven, REST, Boot)"}
+          text={`${stdWords.SPRING} (${stdWords.HIBERNATE}, ${stdWords.MAVEN}, ${stdWords.REST}, ${stdWords.BOOT})`}
         />
-        <ImgText img={MySQLIcon} direction={"left"} text={"MySQL"} />
-        <ImgText img={NodeIcon} direction={"left"} text={"Node JS"} />
+        <ImgText img={MySQLIcon} direction={"left"} text={`${stdWords.MYSQL}`} />
+        <ImgText img={NodeIcon} direction={"left"} text={`${stdWords.NODEJS}`} />
         <ImgText
           img={MongoDBIcon}
           direction={"left"}
-          text={"NoSQL / MongoDB"}
+          text={`${stdWords.NOSQL} / ${stdWords.MONGODB}`}
         />
       </ul>
 
@@ -70,11 +73,11 @@ const Skills = () => {
         <li className="skills__list__header heading-small ">Dabbled in:</li>
         {/* <ImgText img={TypescriptIcon} direction={"left"} text={"Typescript"} />
         <ImgText img={JestIcon} direction={"left"} text={"Jest"} /> */}
-        <ImgText img={FlutterIcon} direction={"left"} text={"Dart / Flutter"} />
-        <ImgText img={FirebaseIcon} direction={"left"} text={"Firebase"} />
-        <ImgText img={D3Icon} direction={"left"} text={"D3.js"} />
-        <ImgText img={GraphQLIcon} direction={"left"} text={"GraphQL"} />
-        <ImgText img={AWSIcon} direction={"left"} text={"AWS (Gateway)"} />
+        <ImgText img={FlutterIcon} direction={"left"} text={`${stdWords.DART} / ${stdWords.FLUTTER}`} />
+        <ImgText img={FirebaseIcon} direction={"left"} text={`${stdWords.FIREBASE}`} />
+        <ImgText img={D3Icon} direction={"left"} text={`${stdWords.D3}`} />
+        <ImgText img={GraphQLIcon} direction={"left"} text={`${stdWords.GRAPHQL}`} />
+        <ImgText img={AWSIcon} direction={"left"} text={`${stdWords.AWS} (${stdWords.GATEWAY})`} />
       </ul>
     </section>
   );

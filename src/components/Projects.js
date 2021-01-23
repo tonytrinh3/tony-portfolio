@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "./Card";
-import { connect } from "react-redux";
+
 import { ImgText } from "utils/ImgText";
-import { ReactComponent as RightArrow } from "img/right-arrow.svg";
+import { ReactComponent as RightArrow } from "img/core-icons/right-arrow.svg";
 
 const renderCard = (projects) => {
   return projects.map((project, i) => {
@@ -32,12 +32,13 @@ const renderCard = (projects) => {
 
 //only want the first two element
 const Projects = (props) => {
+    console.log(props);
   return (
     <div id="projects" className="projects u-section-padding">
       <h2 className="heading-big u-margin-bottom-small ">
         Other Front-End Development Projects
       </h2>
-      {renderCard(props.projects.slice(0, 2))}
+      {renderCard(Object.values(props.projects).slice(0, 3))}
       <Link
         className="header-small projects__more-projects"
         to={`/projects/other`}
@@ -52,11 +53,11 @@ const Projects = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  console.log(state);
-  return {
-    projects: Object.values(state.projects),
-  };
-};
+// const mapStateToProps = (state) => {
+//   console.log(state);
+//   return {
+//     projects: Object.values(state.projects),
+//   };
+// };
 
-export default connect(mapStateToProps, null)(Projects);
+export default Projects;

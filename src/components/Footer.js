@@ -1,9 +1,9 @@
 import React from 'react';
 
-import github from "../img/github-image.svg";
-import email from "../img/mail.svg";
-import linkedin from "../img/linkedin.svg";
-import twitter from "../img/twitter.svg";
+import github from "../img/social-media-icons/github-image.svg";
+import email from "../img/core-icons/mail.svg";
+import linkedin from "../img/social-media-icons/linkedin.svg";
+import twitter from "../img/social-media-icons/twitter.svg";
 
 const Footer = () =>{
     return(
