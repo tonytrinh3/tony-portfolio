@@ -32,13 +32,15 @@ const renderCard = (projects) => {
 
 //only want the first two element
 const Projects = (props) => {
+
+  const numProjects = 4;
   
   return (
     <div id="projects" className="projects u-section-padding">
       <h2 className="heading-big u-margin-bottom-small ">
         Other Front-End Development Projects
       </h2>
-      {renderCard(Object.values(props.projects).slice(0, 3))}
+      {renderCard(Object.values(props.projects).slice(0, numProjects))}
       <Link
         className="header-small projects__more-projects"
         to={`/projects/other`}

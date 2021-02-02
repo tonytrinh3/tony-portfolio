@@ -16,6 +16,7 @@ import warReact from 'img/war-react-gif.gif';
 import war from 'img/war.PNG';
 import portfolio from 'img/portfolio.PNG';
 import rockpaperscissor from 'img/rps-gif.gif';
+import twitterMobile from 'img/twitter-mobile-gif.gif';
 
 import * as stdWords from "utils/standardWords";
 
@@ -50,6 +51,16 @@ const App = () => {
         browser and mobile as well and the score is saved on your local session.`,
       liveLink: "https://master.d2de3czecw1nna.amplifyapp.com/",
       sourceLink: "https://github.com/tonytrinh3/rock-paper-scissors",
+    },
+    twitter_mobile:{
+      title: "Twitter Mobile",
+      img: twitterMobile,
+      languages: [stdWords.JAVASCRIPT, stdWords.REACT, stdWords.SCSS_SASS],
+      description:
+        `Part of a hiring coding challenge, I had to build a web app that fetches tweets based on the handler. The web app
+        needs to fit within the mobile screen, and there needs to be infinite scrolling to fetch tweets continuously as you scroll.`,
+      liveLink: "https://github.com/tonytrinh3/twitter-mobile",
+      sourceLink: "https://github.com/tonytrinh3/twitter-mobile",
     },
     ivite:{
       title: "iVite",

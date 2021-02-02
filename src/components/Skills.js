@@ -58,7 +58,7 @@ const Skills = () => {
         <ImgText
           img={SpringIcon}
           direction={"left"}
-          text={`${stdWords.SPRING} (${stdWords.HIBERNATE}, ${stdWords.MAVEN}, ${stdWords.REST}, ${stdWords.BOOT})`}
+          text={`${stdWords.SPRING} ${stdWords.BOOT} / ${stdWords.HIBERNATE}`}
         />
         <ImgText img={MySQLIcon} direction={"left"} text={`${stdWords.MYSQL}`} />
         <ImgText img={NodeIcon} direction={"left"} text={`${stdWords.NODEJS}`} />
