@@ -71,13 +71,13 @@ const Skills = () => {
 
       <ul className="skills__list">
         <li className="skills__list__header heading-small ">Dabbled in:</li>
-        {/* <ImgText img={TypescriptIcon} direction={"left"} text={"Typescript"} />
-        <ImgText img={JestIcon} direction={"left"} text={"Jest"} /> */}
+        {/* <ImgText img={TypescriptIcon} direction={"left"} text={"Typescript"} /> */}
         <ImgText img={FlutterIcon} direction={"left"} text={`${stdWords.DART} / ${stdWords.FLUTTER}`} />
         <ImgText img={FirebaseIcon} direction={"left"} text={`${stdWords.FIREBASE}`} />
         <ImgText img={D3Icon} direction={"left"} text={`${stdWords.D3}`} />
         <ImgText img={GraphQLIcon} direction={"left"} text={`${stdWords.GRAPHQL}`} />
         <ImgText img={AWSIcon} direction={"left"} text={`${stdWords.AWS} (${stdWords.GATEWAY})`} />
+        <ImgText img={JestIcon} direction={"left"} text={"Jest / Enzyme"} />
       </ul>
     </section>
   );

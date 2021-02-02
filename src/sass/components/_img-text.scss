@@ -1,6 +1,7 @@
 .img-text{
     display: grid;
     grid-template-rows: max-content;
+   
     &--left{
         grid-template-columns: minmax(min-content,max-content) 1fr;
         column-gap: 1rem;
@@ -18,7 +19,7 @@
         height: 5rem;
         width: 5rem;
       
-        align-self:start;
+        align-self:center;
     
         -webkit-user-select: none;  /* Chrome all / Safari all */
         -moz-user-select: none;     /* Firefox all */
@@ -27,6 +28,7 @@
     
 
         &--left{
+          
             grid-column: 1;
             grid-row: 1;
         }
@@ -57,6 +59,7 @@
     .svg{ 
         height: 100%;
         width: 5rem;
+       
      
         &--left{
             grid-column: 1;
@@ -69,7 +72,7 @@
         }
 
         &--black-circle{
-            // height: 75%;
+             height: 100%;
             width: 1rem; 
            
         }

@@ -55,28 +55,28 @@ const FeatureProject =({project})=>{
         {/* <p className = "">I created a mock Airbnb project to demonstrate my front-end development knowledge.</p> */}
         <h3 className=" heading-small ">Design Features: </h3>
         <ul className="feature-project__features">
-          <li className="feature-project__features__item">
+          <li >
             <ImgText
               svg={<BlackCircle className="svg svg--left svg--body-color svg--black-circle" />}
               direction={"left"}
               text={"Login using your Google account"}
             />
           </li>
-          <li className="feature-project__features__item ">
+          <li >
             <ImgText
               svg={<BlackCircle className="svg svg--left svg--body-color svg--black-circle" />}
               direction={"left"}
               text={"Browse and view different listings via CRUD operations."}
             />
           </li>
-          <li className="feature-project__features__item ">
+          <li >
             <ImgText
               svg={<BlackCircle className="svg svg--left svg--body-color svg--black-circle " />}
               direction={"left"}
               text={"  Reserve a room based on dates and guest."}
             />
           </li>
-          <li className="feature-project__features__item ">
+          <li >
             <ImgText
               svg={<BlackCircle className="svg svg--left svg--body-color svg--black-circle"  />}
               direction={"left"}
@@ -84,7 +84,7 @@ const FeatureProject =({project})=>{
             />
           </li>
         </ul>
-        <ul className="feature-project__links">
+        <ul >
           <li>
             <a className="feature-project__links" href={project.liveLink}>
               Live Demo
