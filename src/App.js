@@ -59,7 +59,7 @@ const App = () => {
       description:
         `Part of a hiring coding challenge, I had to build a web app that fetches tweets based on the handler. The web app
         needs to fit within the mobile screen, and there needs to be infinite scrolling to fetch tweets continuously as you scroll.`,
-      liveLink: "https://github.com/tonytrinh3/twitter-mobile",
+      liveLink: "https://drive.google.com/file/d/16o6R06XAojWsaMaMqgYsM0RcpagkRVYF/view?usp=sharing",
       sourceLink: "https://github.com/tonytrinh3/twitter-mobile",
     },
     ivite:{
