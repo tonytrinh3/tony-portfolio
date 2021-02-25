@@ -9,7 +9,7 @@ const Footer = () =>{
     return(
 
     <div className="footer">
-        <h3 className="footer__header heading-medium">Looking for a <span>Front End Development </span>Position <br/> (as of October 2020)</h3>
+        {/* <h3 className="footer__header heading-medium">Looking for a <span>Front End Development </span>Position <br/> (as of October 2020)</h3> */}
         <div className="footer__icons">
             <a href="https://github.com/tonytrinh3">
                 <img src={github} alt="Github" className="footer__icons__icon"/>
