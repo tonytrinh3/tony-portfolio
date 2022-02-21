@@ -29,7 +29,7 @@ const App = () => {
       languages: [stdWords.JAVASCRIPT, stdWords.REACT, stdWords.REDUX, stdWords.SCSS_SASS],
       description:
         "In collaboration with the Environmental Defense Fund, Progressive Web App that allow citizens to view and report pollution events within their neighborhood via text/photos/videos. The reports will be used by officials for environmental advocacy.",
-      liveLink: "/",
+      liveLink: "https://master.dejojku0yqfqj.amplifyapp.com/",
       sourceLink: "/",
     },
     monday:{
