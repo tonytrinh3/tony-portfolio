@@ -54,30 +54,26 @@ const Skills = () => {
         <li className="skills__list__header heading-small ">
           Some Experience:
         </li>
-//         <ImgText img={JavaIcon} direction={"left"} text={"Java"} />
-//         <ImgText
-//           img={SpringIcon}
-//           direction={"left"}
-//           text={`${stdWords.SPRING} ${stdWords.BOOT} / ${stdWords.HIBERNATE}`}
-//         />
-//         <ImgText img={MySQLIcon} direction={"left"} text={`${stdWords.MYSQL}`} />
+         {/*<ImgText img={JavaIcon} direction={"left"} text={"Java"} />
+         <ImgText
+           img={SpringIcon}
+           direction={"left"}
+           text={`${stdWords.SPRING} ${stdWords.BOOT} / ${stdWords.HIBERNATE}`}
+         />
+         <ImgText img={MySQLIcon} direction={"left"} text={`${stdWords.MYSQL}`} />*/}
         <ImgText img={NodeIcon} direction={"left"} text={`${stdWords.NODEJS}`} />
-        <ImgText
-          img={MongoDBIcon}
-          direction={"left"}
-          text={`${stdWords.NOSQL} / ${stdWords.MONGODB}`}
-        />
+        <ImgText img={MongoDBIcon} direction={"left"} text={`${stdWords.MONGODB}`} />
         <ImgText img={JestIcon} direction={"left"} text={"Jest / Enzyme"} />
       </ul>
 
       <ul className="skills__list">
         <li className="skills__list__header heading-small ">Dabbled in:</li>
-        {/* <ImgText img={TypescriptIcon} direction={"left"} text={"Typescript"} /> */}
-//         <ImgText img={FlutterIcon} direction={"left"} text={`${stdWords.DART} / ${stdWords.FLUTTER}`} />
-//         <ImgText img={FirebaseIcon} direction={"left"} text={`${stdWords.FIREBASE}`} />
-//         <ImgText img={D3Icon} direction={"left"} text={`${stdWords.D3}`} />
-        <ImgText img={GraphQLIcon} direction={"left"} text={`${stdWords.GRAPHQL}`} />
-//         <ImgText img={AWSIcon} direction={"left"} text={`${stdWords.AWS} (${stdWords.GATEWAY})`} />
+        {/* <ImgText img={TypescriptIcon} direction={"left"} text={"Typescript"} /> 
+         <ImgText img={FlutterIcon} direction={"left"} text={`${stdWords.DART} / ${stdWords.FLUTTER}`} />
+         <ImgText img={FirebaseIcon} direction={"left"} text={`${stdWords.FIREBASE}`} />
+         <ImgText img={D3Icon} direction={"left"} text={`${stdWords.D3}`} />
+         <ImgText img={AWSIcon} direction={"left"} text={`${stdWords.AWS} (${stdWords.GATEWAY})`} />*/}
+         <ImgText img={GraphQLIcon} direction={"left"} text={`${stdWords.GRAPHQL}`} />
       </ul>
     </section>
   );
