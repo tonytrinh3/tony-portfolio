@@ -7,16 +7,16 @@ import GitIcon from "../img/language-icons/git-icon.png";
 import NodeIcon from "../img/language-icons/nodejs.svg";
 import MongoDBIcon from "../img/language-icons/mongodb.svg";
 
-import JavaIcon from "../img/language-icons/java.svg";
-import SpringIcon from "../img/language-icons/spring-icon.svg";
-import MySQLIcon from "../img/language-icons/mysql.svg";
-import FlutterIcon from "../img/language-icons/flutter.svg";
-import FirebaseIcon from "../img/language-icons/Firebase_Logo_Logomark.svg";
-import D3Icon from "../img/language-icons/d3-icon.svg";
+// import JavaIcon from "../img/language-icons/java.svg";
+// import SpringIcon from "../img/language-icons/spring-icon.svg";
+// import MySQLIcon from "../img/language-icons/mysql.svg";
+// import FlutterIcon from "../img/language-icons/flutter.svg";
+// import FirebaseIcon from "../img/language-icons/Firebase_Logo_Logomark.svg";
+// import D3Icon from "../img/language-icons/d3-icon.svg";
 import GraphQLIcon from "../img/language-icons/graphql-icon.svg";
-import AWSIcon from "../img/language-icons/aws-icon.svg";
+// import AWSIcon from "../img/language-icons/aws-icon.svg";
 
-import TypescriptIcon from "../img/language-icons/typescript.svg";
+// import TypescriptIcon from "../img/language-icons/typescript.svg";
 import JestIcon from "../img/language-icons/jest-logo.svg";
 
 import { ImgText } from "utils/ImgText";

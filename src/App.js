@@ -46,8 +46,8 @@ const App = () => {
       img: rockpaperscissor,
       languages: [stdWords.JAVASCRIPT, stdWords.REACT, stdWords.SCSS_SASS],
       description:
-        `Part of a hiring coding challenge, I had to build a \"Rock Paper Scissor\" game, 
-        with the bonus of adding \"Lizard and Spock\" into the mix. The game works on desktop 
+        `Part of a hiring coding challenge, I had to build a "Rock Paper Scissor" game, 
+        with the bonus of adding "Lizard and Spock" into the mix. The game works on desktop 
         browser and mobile as well and the score is saved on your local session.`,
       liveLink: "https://master.d2de3czecw1nna.amplifyapp.com/",
       sourceLink: "https://github.com/tonytrinh3/rock-paper-scissors",
