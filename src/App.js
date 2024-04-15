@@ -78,7 +78,7 @@ const App = () => {
       description:
         `Mimic website to Airbnb to showcase proficency in ${stdWords.SCSS_SASS}, 
         ${stdWords.REACT}, ${stdWords.REDUX}. Data from the website communicates with JSON API to store user’s data.`,
-      liveLink: "https://master.d14eeu5976vw2v.amplifyapp.com/",
+      liveLink: "https://master--coruscating-cactus-fbbf56.netlify.app/",
       sourceLink: "https://github.com/tonytrinh3/mock-airbnb",
     },
     portfolio:{
