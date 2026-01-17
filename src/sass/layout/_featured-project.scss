@@ -1,0 +1,44 @@
+.feature-project{
+    grid-column: body-start/body-end;
+    
+    display:grid;
+    
+    grid-row-gap:.5rem;
+
+    @media only screen and (max-width:$bp-largest){ //at ipad size, there will be a bar on the top
+        grid-row: 2;
+    }
+
+
+    &__header{
+        color:$new-color-scheme-orange;
+    }
+
+    &__carousel{
+
+        border-radius:$img-border-radius;
+
+        justify-self: center;
+
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */      
+
+        @media only screen and (max-width:$bp-small ){ 
+            grid-column:1;
+            justify-self: start;
+        }
+
+    }
+
+ 
+    &__features{
+      margin-left: 1rem;
+ 
+    }
+
+
+    
+
+}

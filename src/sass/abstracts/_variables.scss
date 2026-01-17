@@ -1,0 +1,86 @@
+$color-header: #001D39;
+$color-header-text: #FFFFFF;
+
+$color-navigation: #003262;
+$color-navigation-text-hover: #07B3E5;
+$color-navigation-button-hover: #184066;
+$color-navigation-button-hover-border: #184066;
+$color-navigation-text:  #FFFFFF;
+
+$color-breadcrumb-background: #f5f5f5;
+$color-breadcrumb-text: #777777;
+
+$color-link-text:#184066;
+$color-link-hover:#07B3E5;
+
+$color-banner-background: #EEEEEE;
+$color-banner-text: #FFFFFF;
+$color-banner-content-background:#51758D;
+
+$color-heading:#323232;
+$color-body: #FFFFFF;
+
+// $color-paragraph:#888;
+
+$color-paragraph:#323232;
+
+$color-hr: #323232;
+
+// $color-footer: #003262;
+$color-footer:#323232;
+$color-footer-text: #FFFFFF;
+
+$color-white: #FFFFFF;
+
+$color-button: #59853B;
+$color-button-hover: #51758D;
+$color-button-text: #FFFFFF;
+
+$color-card-paragraph-background: #EEEEEE;
+
+$color-card-img-caption-background:#323232;
+$color-card-img-caption: #FFFFFF;
+$color-card-link-background:#FBFBFB;
+
+$color-card-link-background-hover: #EEEEEE;
+
+
+//FONT
+$default-font-size: 2.5rem;
+
+
+
+// $grid-column-banner: [full-start] minmax(6rem, 3fr) 
+// [center-start] repeat(10, [col-start] 1fr [col-end]) [center-end] 
+// minmax(6rem, 3fr) [full-end];
+
+$new-color-scheme-background:rgb(251, 250, 251);
+$new-color-scheme:rgb(60, 56, 105);
+$new-color-scheme-blue:rgb(99, 121, 171);
+$new-color-scheme-dark-blue:rgb(39, 44, 70);
+$new-color-scheme-text:rgb(171, 182, 199);
+$new-color-scheme-text-2: rgb(211, 218, 220);
+$new-color-scheme-text-lighter: lighten($new-color-scheme-text-2,13%);
+
+
+$new-color-scheme-orange:rgb(247, 154, 49);
+$new-color-scheme-orange-lighter:lighten($new-color-scheme-orange,20%);;
+$new-color-scheme-orange-darker:darken($new-color-scheme-orange,10%);
+
+
+$nav-width: 20vw;
+$nav-width-ultrawide: 40rem;
+$body-width: calc(100vw - $nav-width);
+
+$img-border-radius: 1rem;
+$default-box-shadow: 0rem 0rem 1rem .1rem rgba(72, 72, 72, .2); 
+
+//RESPONSE BREAKPOINTS
+$bp-largest-2: 132em; //1920 px /16
+$bp-largest: 87em; //1350 px /16
+$bp-large: 68.75em; //1100 px /16 for ipad pro
+$bp-medium: 50em; //800 px / 16 for ipad 
+$bp-small: 26.25em; //420 px / 16 for pixel 2 xl
+
+$bp-hei-small: 37.5em; //600 px / 16 for iphone 5
+$bp-hei-small-2: 40em; //640 px / 16 for moto g4

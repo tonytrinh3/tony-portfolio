@@ -1,0 +1,35 @@
+body {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.4375; //16px size with a 23px line height
+    color: $color-paragraph;
+}
+
+.heading-huge{
+    font-weight: 700;
+    margin-bottom: 1.8rem; //1em = 16 px  1rem = 10px  .625em = 1rem  we want .67em
+    font-size: 3.8rem; //28px
+    line-height: 1;
+}
+
+
+.heading-big{
+    font-weight: 700;
+    margin-bottom: 1.8rem; // 1.8rem ~ .67em idk why
+    font-size: 2.8rem; //28px
+    line-height: 1;
+    
+}
+
+.heading-med{
+    font-weight: 600;
+    margin-bottom: 1.8rem; //
+    font-size: 2.3rem; //28px
+    line-height: 1;
+    
+}
+
+.paragraph{
+    font-size: $default-font-size;
+}
+

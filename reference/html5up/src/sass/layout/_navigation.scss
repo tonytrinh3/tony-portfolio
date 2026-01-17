@@ -1,0 +1,62 @@
+.navigation{
+    background-color: $color-navigation;
+    grid-column: full-start / full-end;
+
+   display: grid;
+   grid-template-columns: $grid-column-nav;
+   grid-template-rows: 12.5rem;
+   grid-column-gap: 4rem;
+  
+  
+
+   &__img{
+    grid-column: logo-start/logo-end;
+    align-self:center;
+    height: 50%;
+    cursor: pointer;
+   }
+
+   &__button{
+       color: $color-navigation-text;
+       font-size: 2.6rem;
+       padding: 3rem;
+       align-self: center;
+       text-align:center;
+       //you need these below to negate the user style sheet default from browser
+       border: none;
+        border-radius: 0;
+        background-color: $color-navigation;
+        text-decoration: none;
+        border: 1.5px solid $color-navigation;
+        border-radius: 1px;
+    
+      
+  
+        &--1{
+            grid-column: col-start 6/span 1;
+        }
+
+   }
+
+   &__button:hover{
+    color: $color-navigation-text-hover;
+    background-color: rgba($color-navigation-button-hover,.5);
+    padding: 3rem;
+    border: 1.5px solid $color-navigation-text-hover;
+    border-radius: 1px;
+    cursor: pointer;
+   }
+
+
+//    &__caret {
+//     display: inline-table;
+//     width: 0;
+//     height: 0;
+//     margin-left: 2px;
+//     vertical-align: middle;
+//     border-top: 4px dashed;
+//     border-top: 4px solid;
+//     border-right: 4px solid transparent;
+//     border-left: 4px solid transparent;
+//     }
+}

@@ -1,0 +1,369 @@
+@import "../font-awesome/brands.scss";
+@import "../font-awesome/fontawesome.scss";
+@import "../font-awesome/solid.scss";
+//https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+.navigation{
+   
+    grid-column: nav-start / nav-end;
+    grid-row: 1/-1;
+ 
+    position: fixed;
+    right: 0rem;
+    width: $nav-width;
+  
+    // height: 100vh;
+  
+
+    background-color: $new-color-scheme;
+    color: $new-color-scheme-text-lighter;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+
+    @media only screen and (max-width:$bp-largest){ //at ipad size, there will be a bar on the top
+       
+        grid-column: full-start / full-end;
+        grid-row: 1;
+     
+        background-color: $new-color-scheme;
+        color: $new-color-scheme-text-lighter;
+        height: 10rem;
+        width: 100%;
+
+        position: fixed;
+        z-index:999;
+
+        display: grid;
+        grid-auto-flow: column;
+   
+    }
+
+    @media only screen and (min-width:$bp-largest-2){
+        //for ultrawide screens
+     
+        width: $nav-width-ultrawide;
+     
+       }
+
+
+
+    &__content{
+
+        grid-column: nav-start / nav-end;
+        grid-row: 1/-1;
+        height: 100vh;
+        justify-content: center;
+    
+        background-color: $new-color-scheme;
+        color: $new-color-scheme-text-lighter;
+        display: grid;
+        grid-template-rows: repeat(5, min-content) 1fr;
+        grid-template-columns: minmax(20rem,max-content)  ;
+        
+        justify-items: center;
+        row-gap: 2rem;
+
+        @media only screen and (max-height:$bp-hei-small){
+            line-height: 1.2;
+        }
+
+        @media only screen and (max-width:$bp-largest){
+            grid-template-rows: repeat(7, min-content);
+        }
+
+        // &__img-container{
+        //     grid-row: 1;
+        //     grid-column: 1/-1;
+        // }
+
+        &__img{
+            grid-row: 1;
+            grid-column: 1/-1;
+            opacity: 1;
+
+            border-radius: 50%;
+            object-fit: contain;
+            height: 20rem;
+            // width: auto;
+            // width: 100%;
+            justify-self: center;
+            margin-top: 2rem;
+         
+            
+            // transition: .5s ease;
+         
+
+            @media only screen and (max-width:$bp-small){
+                height: 15rem;
+            }
+
+            @media only screen and (max-height:$bp-hei-small){
+                margin-top: 1rem;
+                height: 10rem;
+            }
+
+    
+        }
+
+        //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
+        &__overlay{
+            grid-row: 1;
+            grid-column: 1/-1;
+            position: relative;
+            justify-self: center;
+            align-self: center;
+ 
+            // top: 0;
+            // bottom: 0;
+            // left: 20;
+            // right: 0;
+         
+            height: 21rem;
+            width: 21rem;
+            border-radius: 50%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: $new-color-scheme;
+
+
+           
+
+            @media only screen and (max-width:$bp-small){ //pixel 2 xl
+                display: none;
+                // height: 16rem;
+                // width: 16rem;
+            }
+
+            // @media only screen and (max-height:$bp-hei-small){
+            //     height: 11rem;
+            //     width: 11rem;
+            // }
+
+
+
+            &__home{ // all of this in order for text to be center
+                color: $new-color-scheme-text-lighter;
+                font-size: 20px;
+                position: absolute;
+                height: 50%;
+                width: 50%;
+                // text-align: center;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+         
+             
+            }
+        }
+
+        &__overlay:hover{
+            opacity: 1;
+          
+        }
+
+        // &__img:hover{
+        
+        //     background-color: red;
+        //     color: $new-color-scheme-text-lighter; 
+        //     opacity: .2;
+     
+
+
+        // }
+    
+        &__header{
+            // grid-column: 1/-1;
+            margin-top: 2rem;
+            font-weight: 600;
+            line-height: .5;
+            @media only screen and (max-height:$bp-hei-small){
+                margin-top: 0rem;
+            }
+        }
+    
+        &__quote{
+            // grid-column: 1/-1;
+            font-style: italic;
+            text-align: center;
+            font-size: 2rem;
+
+            margin: -1rem 4rem -1rem 4rem;
+            // margin: 0rem 4rem;
+            color: $new-color-scheme-orange;
+        }
+
+        &__citizen{
+            grid-column: 1/-1;
+            text-align: center;
+            align-self: center;
+            justify-self: center;
+            font-size: 2rem;
+        }
+        &__items{
+            text-align: center;
+            width: 100%; 
+            // margin: 0 4rem;
+           
+        
+            &__item{
+               
+                color: $new-color-scheme-text-lighter;
+                padding: 2rem;
+
+                & a{
+                    color: $new-color-scheme-text-lighter;
+                    font-weight: 500;
+                    text-decoration: none;;
+                }
+
+                & a:visited {
+                    color: $new-color-scheme-text-lighter;
+                  }
+
+                @media only screen and (max-width:$bp-largest){
+                    padding: 1rem;
+                  }
+            }
+            &__item:hover{
+                background-color: $new-color-scheme-text;
+            }
+        }
+
+        &__icons{
+            grid-row: 6;
+            align-self: end;
+            display:grid;
+            grid-auto-flow: column;
+            grid-column-gap: 2rem;
+            grid-template-rows: 4rem;
+            margin-bottom: 5rem;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;          /* Likely future */      
+
+            @media only screen and (max-width:$bp-largest){
+                margin-bottom: 1rem;
+            }
+
+            @media only screen and (max-height:$bp-hei-small-2){
+                margin-bottom: 0rem;
+            }
+
+            &__icon{
+                height: 4rem;
+            }
+        }
+
+        // &__dropdown{
+        //     &__close{
+        //         cursor: pointer;
+        //         margin-bottom: 2rem;
+        //         height: 5rem;
+        //         -webkit-user-select: none;  /* Chrome all / Safari all */
+        //         -moz-user-select: none;     /* Firefox all */
+        //         -ms-user-select: none;      /* IE 10+ */
+        //         user-select: none;          /* Likely future */      
+
+        //         @media only screen and (max-height:$bp-hei-small){
+                    
+        //         }
+
+        //     }
+        // }
+
+      
+
+      
+
+    }
+
+    &__nav-btn{
+        display:none;
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */      
+        @media only screen and (max-width:$bp-largest){
+            display: inline-block;
+            grid-column: 2;
+            grid-row: 1;
+            justify-self: end;
+            align-self: center;
+            margin-right: 3rem;
+            // margin-top: 2rem;
+          
+            width: 5rem;
+            height: 5rem;
+            // background-color:red;
+            cursor: pointer;
+
+            z-index:1000;
+            
+            
+        }
+       
+
+    }
+
+    &__home-btn{
+        display:none;
+
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */      
+        @media only screen and (max-width:$bp-largest){
+            display: inline-block;
+            grid-column: 1;
+            grid-row: 1;
+            justify-self: start;
+            align-self: center;
+            margin-left: 1.5rem;
+            width: 5rem;
+            height: 5rem;
+            cursor: pointer;
+      
+            
+            
+        }
+
+    }
+
+
+    &__pc{
+        @media only screen and (max-width:$bp-largest){
+            display: none;
+        }
+    }
+
+    &__mobile{ // to use same content but one for drop down for mobile and one for pc only
+
+        @media only screen and (max-width:$bp-largest){
+            transition-duration: 6s;
+            position: fixed;
+            // z-index: 1000;
+            right: 0rem;
+        }
+
+        @media only screen and (max-width:$bp-small){
+            width: 70vw;
+        }
+
+
+    }
+
+  
+
+}
+
+
+
+
